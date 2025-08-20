@@ -43,7 +43,7 @@ const TrilhaRelatos: React.FC = () => {
         <div className="mt-8 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl text-center">
           <p className="text-gray-700">
             Esta seção será atualizada com os vídeos dos relatos dos estudantes.
-            ( EU SEI QUE VOCES ESTAO VENDO AI NESSA REUNIAO DE HOJE COM A FABIANA , O SITE AGORA....)
+            ( EU SEI QUE VOCES ESTAO VENDO AIII NESSA REUNIAO DE HOJE COM A FABIANA , O SITE AGORA....)
           </p>
         </div>
       </div>
