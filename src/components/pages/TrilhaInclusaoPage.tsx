@@ -6,20 +6,8 @@ const TrilhaInclusaoPage: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('sobre');
   const [modalImage, setModalImage] = useState<{ url: string; alt: string } | null>(null);
 
-  const atividades = [
-    {
-      titulo: "Prática Sustentável Empreendedora",
-      imagens: [
-        "https://i.ibb.co/RkpH80sk/inclusao-pratica-sustentavel-empreendora.jpg",
-        "https://i.ibb.co/fdntY01M/inclusao-pratica-sustentavel-empreendora-8.jpg",
-        "https://i.ibb.co/wr6kvLH0/inclusao-pratica-sustentavel-empreendora-7.jpg",
-        "https://i.ibb.co/2YfS7n2B/inclusao-pratica-sustentavel-empreendora-6.jpg",
-        "https://i.ibb.co/8nnkyTqR/inclusao-pratica-sustentavel-empreendora-5.jpg",
-        "https://i.ibb.co/N6WSKxYg/inclusao-pratica-sustentavel-empreendora-4.jpg",
-        "https://i.ibb.co/C55xxbJq/inclusao-pratica-sustentavel-empreendora-3.jpg",
-        "https://i.ibb.co/20NJQXPS/inclusao-pratica-sustentavel-empreendora-2.jpg"
-      ]
-    }
+  const atividades: Array<{titulo: string; imagens: string[]}> = [
+    // Atividades específicas do projeto de inclusão podem ser adicionadas aqui
   ];
 
   const reunioes = [
@@ -62,27 +50,36 @@ const TrilhaInclusaoPage: React.FC = () => {
   };
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-8 overflow-x-hidden">
+      {/* Logo da Escola */}
+      <div className="absolute top-4 right-4 z-10">
+        <img
+          src="https://i.ibb.co/VWJPNBDs/Whats-App-Image-2025-08-23-at-15-09-02.jpg"
+          alt="Logo da Escola"
+          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg shadow-lg object-cover"
+        />
+      </div>
+
       <div className="text-center mb-8">
-        <div className="bg-pink-100 p-4 rounded-full w-fit mx-auto mb-4">
-          <Heart className="w-12 h-12 text-pink-600" />
+        <div className="bg-rose-100 p-4 rounded-full w-fit mx-auto mb-4">
+          <Heart className="w-12 h-12 text-rose-600" />
         </div>
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
+        <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4 px-2">
           5ª Trilha - Inclusão
         </h1>
-        <h2 className="text-2xl font-semibold text-pink-700 mb-4">
+        <h2 className="text-lg sm:text-2xl font-semibold text-rose-700 mb-4 px-2">
           Projeto "Vamos nos Permitir"
         </h2>
       </div>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-2 sm:px-0">
         {/* Navigation Tabs */}
-        <div className="flex flex-wrap gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <button
             onClick={() => setActiveSection('sobre')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+            className={`flex items-center justify-center gap-2 px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base ${
               activeSection === 'sobre'
-                ? 'bg-pink-600 text-white shadow-lg'
+                ? 'bg-rose-600 text-white shadow-lg'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
@@ -91,9 +88,9 @@ const TrilhaInclusaoPage: React.FC = () => {
           </button>
           <button
             onClick={() => setActiveSection('atividades')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+            className={`flex items-center justify-center gap-2 px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base ${
               activeSection === 'atividades'
-                ? 'bg-green-600 text-white shadow-lg'
+                ? 'bg-pink-600 text-white shadow-lg'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
@@ -102,9 +99,9 @@ const TrilhaInclusaoPage: React.FC = () => {
           </button>
           <button
             onClick={() => setActiveSection('reunioes')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+            className={`flex items-center justify-center gap-2 px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base ${
               activeSection === 'reunioes'
-                ? 'bg-blue-600 text-white shadow-lg'
+                ? 'bg-red-600 text-white shadow-lg'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
@@ -116,52 +113,52 @@ const TrilhaInclusaoPage: React.FC = () => {
         {/* Sobre o Projeto */}
         {activeSection === 'sobre' && (
           <div className="space-y-8">
-            <div className="bg-gradient-to-r from-pink-50 to-purple-50 border border-pink-200 rounded-xl p-8">
-              <h2 className="text-2xl font-bold text-pink-800 mb-6">Sobre o Projeto "Vamos nos Permitir"</h2>
+            <div className="bg-gradient-to-r from-rose-50 to-pink-50 border border-rose-200 rounded-xl p-8">
+              <h2 className="text-lg sm:text-2xl font-bold text-rose-800 mb-6">Sobre o Projeto "Vamos nos Permitir"</h2>
               
               <div className="space-y-6">
-                <div className="bg-white rounded-lg p-6 border border-pink-200">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
-                    <Heart className="w-6 h-6 text-pink-600" />
+                <div className="bg-white rounded-lg p-6 border border-rose-200">
+                  <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                    <Heart className="w-6 h-6 text-rose-600" />
                     Objetivo Principal
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                     O projeto tem como objetivo <strong>incluir estudantes do Atendimento Educacional Especializado (AEE) 
                     no mercado de trabalho</strong>, promovendo autonomia, protagonismo e pertencimento dos alunos com deficiência (PCD).
                   </p>
                 </div>
 
                 <div className="bg-white rounded-lg p-6 border border-green-200">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
-                    <Briefcase className="w-6 h-6 text-green-600" />
+                  <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                    <Briefcase className="w-6 h-6 text-pink-600" />
                     Focos do Projeto
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                     Além de preparar os jovens para oportunidades como <strong>menor ou jovem aprendiz</strong>, 
                     o projeto incentiva:
                   </p>
-                  <ul className="text-gray-700 space-y-2">
+                  <ul className="text-sm sm:text-base text-gray-700 space-y-2">
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                      <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
                       O desenvolvimento acadêmico
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                      <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
                       O empreendedorismo
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                      <span className="w-2 h-2 bg-pink-500 rounded-full"></span>
                       A participação social
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-white rounded-lg p-6 border border-blue-200">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
-                    <Scale className="w-6 h-6 text-blue-600" />
+                  <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                    <Scale className="w-6 h-6 text-red-600" />
                     Importância da Inclusão
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                     A inclusão de pessoas com deficiência no mercado de trabalho não é apenas uma questão legal, 
                     mas também uma oportunidade de criar um ambiente mais diverso, criativo e humano. 
                     O projeto visa quebrar barreiras e mostrar que <strong>todos têm potencial para contribuir 
@@ -176,17 +173,17 @@ const TrilhaInclusaoPage: React.FC = () => {
         {/* Atividades */}
         {activeSection === 'atividades' && (
           <div className="space-y-8">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 text-center">
+            <h2 className="text-lg sm:text-2xl font-bold text-pink-800 mb-6 text-center">
               Atividades do Projeto
             </h2>
             
             {atividades.map((atividade, index) => (
-              <div key={index} className="bg-white border border-green-200 rounded-xl p-6 shadow-lg">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-green-100 p-3 rounded-full">
-                    <Users className="w-6 h-6 text-green-600" />
+              <div key={index} className="bg-white border border-pink-200 rounded-xl p-6 shadow-lg">
+                <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
+                  <div className="bg-pink-100 p-3 rounded-full">
+                    <Users className="w-6 h-6 text-pink-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800">{atividade.titulo}</h3>
+                  <h3 className="text-base sm:text-xl font-bold text-gray-800 text-center sm:text-left">{atividade.titulo}</h3>
                 </div>
                 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -209,28 +206,28 @@ const TrilhaInclusaoPage: React.FC = () => {
         {/* Reuniões e Entrevistas */}
         {activeSection === 'reunioes' && (
           <div className="space-y-8">
-            <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">
+            <h2 className="text-lg sm:text-2xl font-bold text-red-800 mb-6 text-center">
               Reuniões e Entrevistas Realizadas
             </h2>
             
             {reunioes.map((reuniao, index) => (
-              <div key={index} className="bg-white border border-blue-200 rounded-xl p-6 shadow-lg">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="bg-blue-100 p-3 rounded-full">
-                    <Briefcase className="w-6 h-6 text-blue-600" />
+              <div key={index} className="bg-white border border-red-200 rounded-xl p-6 shadow-lg">
+                <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
+                  <div className="bg-red-100 p-3 rounded-full">
+                    <Briefcase className="w-6 h-6 text-red-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">{reuniao.titulo}</h3>
-                    <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
-                      <h4 className="font-semibold text-blue-800 mb-2">Objetivo:</h4>
-                      <p className="text-gray-700 leading-relaxed">{reuniao.objetivo}</p>
+                    <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-3 break-words">{reuniao.titulo}</h3>
+                    <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+                      <h4 className="text-sm sm:text-base font-semibold text-red-800 mb-2">Objetivo:</h4>
+                      <p className="text-xs sm:text-base text-gray-700 leading-relaxed">{reuniao.objetivo}</p>
                     </div>
                   </div>
                 </div>
                 
-                <div className="flex gap-4 flex-wrap justify-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center">
                   {reuniao.imagem && (
-                    <div className="w-full max-w-md overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                    <div className="w-full max-w-sm overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
                       <img 
                         src={reuniao.imagem} 
                         alt={reuniao.titulo}
@@ -240,7 +237,7 @@ const TrilhaInclusaoPage: React.FC = () => {
                     </div>
                   )}
                   {reuniao.imagens && reuniao.imagens.map((imagem, imgIndex) => (
-                    <div key={imgIndex} className="w-full max-w-md overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                    <div key={imgIndex} className="w-full max-w-sm overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
                       <img 
                         src={imagem} 
                         alt={`${reuniao.titulo} - Foto ${imgIndex + 1}`}
@@ -255,11 +252,11 @@ const TrilhaInclusaoPage: React.FC = () => {
           </div>
         )}
 
-        <div className="mt-12 p-6 bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl text-center">
-          <h3 className="text-xl font-bold text-gray-800 mb-2">
+        <div className="mt-8 sm:mt-12 p-4 sm:p-6 bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl text-center mx-2 sm:mx-0">
+          <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-2">
             Juntos Construindo um Futuro Inclusivo
           </h3>
-          <p className="text-gray-700">
+          <p className="text-sm sm:text-base text-gray-700">
             O projeto "Vamos nos Permitir" representa a crença de que todos merecem oportunidades iguais de 
             crescer, aprender e contribuir para a sociedade. Cada ação realizada é um passo em direção a 
             um mundo mais inclusivo e justo.

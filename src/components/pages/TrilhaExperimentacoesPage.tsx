@@ -89,6 +89,19 @@ const TrilhaExperimentacoesPage: React.FC = () => {
 
   const visitasTecnicas = [
     {
+      titulo: "Prática Sustentável Empreendedora",
+      imagens: [
+        "https://i.ibb.co/RkpH80sk/inclusao-pratica-sustentavel-empreendora.jpg",
+        "https://i.ibb.co/fdntY01M/inclusao-pratica-sustentavel-empreendora-8.jpg",
+        "https://i.ibb.co/wr6kvLH0/inclusao-pratica-sustentavel-empreendora-7.jpg",
+        "https://i.ibb.co/2YfS7n2B/inclusao-pratica-sustentavel-empreendora-6.jpg",
+        "https://i.ibb.co/8nnkyTqR/inclusao-pratica-sustentavel-empreendora-5.jpg",
+        "https://i.ibb.co/N6WSKxYg/inclusao-pratica-sustentavel-empreendora-4.jpg",
+        "https://i.ibb.co/C55xxbJq/inclusao-pratica-sustentavel-empreendora-3.jpg",
+        "https://i.ibb.co/20NJQXPS/inclusao-pratica-sustentavel-empreendora-2.jpg"
+      ]
+    },
+    {
       titulo: "Feira do Mármore",
       imagens: [
         "https://i.ibb.co/r2DgGjcr/visita-tecnica-feira-marmore.jpg",
@@ -129,6 +142,19 @@ const TrilhaExperimentacoesPage: React.FC = () => {
         "https://i.ibb.co/Dxp3NmW/Mini-Curso-financeiro-9ano-3.jpg",
         "https://i.ibb.co/VcnQ18kB/Mini-Curso-financeiro-9ano-2.jpg"
       ]
+    },
+    {
+      titulo: "Prática Sustentável Empreendedora",
+      imagens: [
+        "https://i.ibb.co/RkpH80sk/inclusao-pratica-sustentavel-empreendora.jpg",
+        "https://i.ibb.co/fdntY01M/inclusao-pratica-sustentavel-empreendora-8.jpg",
+        "https://i.ibb.co/wr6kvLH0/inclusao-pratica-sustentavel-empreendora-7.jpg",
+        "https://i.ibb.co/2YfS7n2B/inclusao-pratica-sustentavel-empreendora-6.jpg",
+        "https://i.ibb.co/8nnkyTqR/inclusao-pratica-sustentavel-empreendora-5.jpg",
+        "https://i.ibb.co/N6WSKxYg/inclusao-pratica-sustentavel-empreendora-4.jpg",
+        "https://i.ibb.co/C55xxbJq/inclusao-pratica-sustentavel-empreendora-3.jpg",
+        "https://i.ibb.co/20NJQXPS/inclusao-pratica-sustentavel-empreendora-2.jpg"
+      ]
     }
   ];
 
@@ -141,41 +167,50 @@ const TrilhaExperimentacoesPage: React.FC = () => {
   };
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-8 overflow-x-hidden">
+      {/* Logo da Escola */}
+      <div className="absolute top-4 right-4 z-10">
+        <img
+          src="https://i.ibb.co/VWJPNBDs/Whats-App-Image-2025-08-23-at-15-09-02.jpg"
+          alt="Logo da Escola"
+          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg shadow-lg object-cover"
+        />
+      </div>
+
       <div className="text-center mb-8">
-        <div className="bg-orange-100 p-4 rounded-full w-fit mx-auto mb-4">
-          <MessageSquare className="w-12 h-12 text-orange-600" />
+        <div className="bg-purple-100 p-4 rounded-full w-fit mx-auto mb-4">
+          <MessageSquare className="w-12 h-12 text-purple-600" />
         </div>
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
+        <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4 px-2">
           4ª Trilha - Experimentações
         </h1>
-        <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-sm sm:text-base text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
           Agora é a hora de participar das Rodas de Conversa de RH! Além disso, também vão rolar visitas técnicas 
           e projetos escolares, que ajudam a colocar tudo isso na prática.
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-2 sm:px-0">
         {/* Introdução */}
-        <div className="bg-gradient-to-r from-orange-50 to-yellow-50 border border-orange-200 rounded-xl p-8 mb-8">
-          <h2 className="text-2xl font-bold text-orange-800 mb-4">O que são as Rodas de Conversa?</h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
+        <div className="bg-gradient-to-r from-purple-50 to-violet-50 border border-purple-200 rounded-xl p-8 mb-8">
+          <h2 className="text-lg sm:text-2xl font-bold text-purple-800 mb-4">O que são as Rodas de Conversa?</h2>
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
             Elas são um <strong>espaço tranquilo e aberto</strong> onde todo mundo pode trocar ideias, contar experiências 
             e ouvir diferentes pontos de vista sobre um tema específico. A ideia é justamente essa: criar um ambiente leve, 
             onde rola diálogo de verdade, respeito, e aprendizado em grupo.
           </p>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
             É o tipo de vivência que faz a diferença na sua formação e no seu olhar para o mundo!
           </p>
         </div>
 
         {/* Navigation Tabs */}
-        <div className="flex flex-wrap gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <button
             onClick={() => setActiveSection('rodas')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+            className={`flex items-center justify-center gap-2 px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base ${
               activeSection === 'rodas'
-                ? 'bg-blue-600 text-white shadow-lg'
+                ? 'bg-purple-600 text-white shadow-lg'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
@@ -184,9 +219,9 @@ const TrilhaExperimentacoesPage: React.FC = () => {
           </button>
           <button
             onClick={() => setActiveSection('visitas')}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+            className={`flex items-center justify-center gap-2 px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base ${
               activeSection === 'visitas'
-                ? 'bg-green-600 text-white shadow-lg'
+                ? 'bg-violet-600 text-white shadow-lg'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
@@ -198,19 +233,19 @@ const TrilhaExperimentacoesPage: React.FC = () => {
         {/* Rodas de Conversa */}
         {activeSection === 'rodas' && (
           <div className="space-y-8">
-            <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">
+            <h2 className="text-lg sm:text-2xl font-bold text-purple-800 mb-6 text-center">
               Rodas de Conversa Realizadas
             </h2>
             
             {rodasConversa.map((roda, index) => (
-              <div key={index} className="bg-white border border-blue-200 rounded-xl p-6 shadow-lg">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="bg-blue-100 p-3 rounded-full">
-                    <Users className="w-6 h-6 text-blue-600" />
+              <div key={index} className="bg-white border border-purple-200 rounded-xl p-6 shadow-lg">
+                <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
+                  <div className="bg-purple-100 p-3 rounded-full">
+                    <Users className="w-6 h-6 text-purple-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-800 mb-2">{roda.tema}</h3>
-                    <p className="text-blue-700 font-semibold">Convidado(a): {roda.convidado}</p>
+                    <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-2 break-words">{roda.tema}</h3>
+                    <p className="text-sm sm:text-base text-purple-700 font-semibold break-words">Convidado(a): {roda.convidado}</p>
                   </div>
                 </div>
                 
@@ -234,17 +269,17 @@ const TrilhaExperimentacoesPage: React.FC = () => {
         {/* Visitas Técnicas */}
         {activeSection === 'visitas' && (
           <div className="space-y-8">
-            <h2 className="text-2xl font-bold text-green-800 mb-6 text-center">
+            <h2 className="text-lg sm:text-2xl font-bold text-violet-800 mb-6 text-center">
               Dicas para Conhecer Profissões - Visitas Técnicas
             </h2>
             
             {visitasTecnicas.map((visita, index) => (
-              <div key={index} className="bg-white border border-green-200 rounded-xl p-6 shadow-lg">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-green-100 p-3 rounded-full">
-                    <MapPin className="w-6 h-6 text-green-600" />
+              <div key={index} className="bg-white border border-violet-200 rounded-xl p-6 shadow-lg">
+                <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
+                  <div className="bg-violet-100 p-3 rounded-full">
+                    <MapPin className="w-6 h-6 text-violet-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800">{visita.titulo}</h3>
+                  <h3 className="text-base sm:text-xl font-bold text-gray-800 text-center sm:text-left break-words">{visita.titulo}</h3>
                 </div>
                 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -264,11 +299,11 @@ const TrilhaExperimentacoesPage: React.FC = () => {
           </div>
         )}
 
-        <div className="mt-12 p-6 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl text-center">
-          <h3 className="text-xl font-bold text-gray-800 mb-2">
+        <div className="mt-8 sm:mt-12 p-4 sm:p-6 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl text-center mx-2 sm:mx-0">
+          <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-2">
             A Importância da Experimentação
           </h3>
-          <p className="text-gray-700">
+          <p className="text-sm sm:text-base text-gray-700">
             Essas experiências práticas são fundamentais para você conhecer diferentes profissões e descobrir 
             qual caminho profissional faz mais sentido para o seu futuro!
           </p>
