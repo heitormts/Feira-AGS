@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Heart, Users, Briefcase, Scale, ChevronDown, ChevronUp } from 'lucide-react';
-import ImageModal from '../ImageModal';
+import ImageModal from './components/ImageModal';
 
 const TrilhaInclusaoPage: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('sobre');
