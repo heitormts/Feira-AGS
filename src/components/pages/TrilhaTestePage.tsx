@@ -4,24 +4,6 @@ import { ExternalLink, Target, Compass } from 'lucide-react';
 const TrilhaTestePage: React.FC = () => {
   return (
     <div className="p-4 sm:p-8 overflow-x-hidden">
-      {/* Logo da Escola */}
-      <div className="absolute top-4 right-4 z-10">
-        <img
-          src="https://i.ibb.co/VWJPNBDs/Whats-App-Image-2025-08-23-at-15-09-02.jpg"
-          alt="Logo da Escola"
-          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg shadow-lg object-cover"
-        />
-      </div>
-
-      {/* Logo da Escola */}
-      <div className="absolute top-4 right-4 z-10">
-        <img
-          src="https://i.ibb.co/VWJPNBDs/Whats-App-Image-2025-08-23-at-15-09-02.jpg"
-          alt="Logo da Escola"
-          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg shadow-lg object-cover"
-        />
-      </div>
-
       <div className="text-center mb-6 sm:mb-8">
         <div className="bg-cyan-100 p-4 rounded-full w-fit mx-auto mb-4">
           <Target className="w-8 h-8 sm:w-12 sm:h-12 text-cyan-600" />

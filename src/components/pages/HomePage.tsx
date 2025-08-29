@@ -15,15 +15,6 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="p-4 sm:p-8 overflow-x-hidden">
-      {/* Logo da Escola */}
-      <div className="absolute top-4 right-4 z-10">
-        <img
-          src="https://i.ibb.co/VWJPNBDs/Whats-App-Image-2025-08-23-at-15-09-02.jpg"
-          alt="Logo da Escola"
-          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg shadow-lg object-cover"
-        />
-      </div>
-
       {/* Hero Section com Agostinho */}
       <div className="text-center mb-6 sm:mb-12">
         <div className="flex flex-col items-center gap-6">
