@@ -96,6 +96,12 @@ const HomePage: React.FC = () => {
             color: "pink"
           },
           { 
+            title: "Serviço de Cidadania", 
+            description: "Portais e serviços para exercer sua cidadania",
+            icon: Target,
+            color: "indigo"
+          },
+          { 
             title: "Relato de Experiências", 
             description: "Histórias reais de sucesso",
             icon: Target,

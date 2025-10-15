@@ -18,25 +18,93 @@ const TrilhaRelatos: React.FC = () => {
       </div>
 
       <div className="max-w-5xl mx-auto px-2 sm:px-0">
-        {/* Espaço Reservado para Vídeos */}
-        <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-8 text-center">
-          <div className="bg-yellow-100 p-6 rounded-full w-fit mx-auto mb-6">
-            <Play className="w-16 h-16 text-yellow-600" />
+        {/* Vídeos dos Estudantes */}
+        <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-6 sm:p-8">
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
+            <div className="bg-yellow-100 p-3 rounded-full">
+              <Video className="w-6 h-6 text-yellow-600" />
+            </div>
+            <h2 className="text-lg sm:text-2xl font-bold text-yellow-800 text-center sm:text-left">
+              Relatos dos Estudantes
+            </h2>
           </div>
           
-          <h2 className="text-xl sm:text-3xl font-bold text-yellow-800 mb-4">
-            Vídeos dos Estudantes
-          </h2>
-          
-          <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto">
-            Espaço reservado para os vídeos com os relatos de experiência dos estudantes 
-            que participaram do projeto.
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-8 text-center">
+            Conheça as experiências e aprendizados dos estudantes que participaram das trilhas do projeto.
           </p>
-
-          <div className="bg-white border border-yellow-200 rounded-lg p-6 mt-8">
-            <p className="text-sm sm:text-base text-gray-600 italic">
-              Os vídeos com os relatos dos estudantes serão adicionados aqui em breve.
-            </p>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Vídeo 1 */}
+            <div className="bg-white rounded-lg p-4 shadow-md">
+              <div className="aspect-w-16 aspect-h-9 mb-4">
+                <iframe 
+                  className="w-full h-64 rounded-lg"
+                  src="https://www.youtube.com/embed/OhEnUHpSQRQ?si=c86G_QbiV1p2FUxE" 
+                  title="Relato de Experiência - Estudante 1" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                />
+              </div>
+              <h4 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
+                Relato de Experiência - Estudante 1
+              </h4>
+            </div>
+            
+            {/* Vídeo 2 */}
+            <div className="bg-white rounded-lg p-4 shadow-md">
+              <div className="aspect-w-16 aspect-h-9 mb-4">
+                <iframe 
+                  className="w-full h-64 rounded-lg"
+                  src="https://www.youtube.com/embed/B0mIpjSY8ic?si=ocSBBoE3DTHQcfVZ" 
+                  title="Relato de Experiência - Estudante 2" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                />
+              </div>
+              <h4 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
+                Relato de Experiência - Estudante 2
+              </h4>
+            </div>
+            
+            {/* Vídeo 3 */}
+            <div className="bg-white rounded-lg p-4 shadow-md">
+              <div className="aspect-w-16 aspect-h-9 mb-4">
+                <iframe 
+                  className="w-full h-64 rounded-lg"
+                  src="https://www.youtube.com/embed/6wHu1Pd3O-w?si=W0fXKZKQ_njLO3Qd" 
+                  title="Relato de Experiência - Estudante 3" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                />
+              </div>
+              <h4 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
+                Relato de Experiência - Estudante 3
+              </h4>
+            </div>
+            
+            {/* Vídeo 4 */}
+            <div className="bg-white rounded-lg p-4 shadow-md">
+              <div className="aspect-w-16 aspect-h-9 mb-4">
+                <iframe 
+                  className="w-full h-64 rounded-lg"
+                  src="https://www.youtube.com/embed/q6p2C3SjQJ8?si=czxphlHSW64qPQFU" 
+                  title="Relato de Experiência - Estudante 4" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                />
+              </div>
+              <h4 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
+                Relato de Experiência - Estudante 4
+              </h4>
+            </div>
           </div>
         </div>
 

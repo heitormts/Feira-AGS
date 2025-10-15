@@ -11,8 +11,27 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ currentTrilha }) => {
+  const getHeaderColor = (color: string) => {
+    switch (color) {
+      case 'orange':
+        return 'border-orange-500';
+      case 'yellow':
+        return 'border-yellow-500';
+      case 'cyan':
+        return 'border-cyan-500';
+      case 'green':
+        return 'border-green-500';
+      case 'purple':
+        return 'border-purple-500';
+      case 'pink':
+        return 'border-rose-500';
+      default:
+        return 'border-blue-500';
+    }
+  };
+
   return (
-    <header className="bg-white shadow-lg border-b-4 border-blue-500">
+    <header className={`bg-white shadow-lg border-b-4 ${getHeaderColor(currentTrilha.color)} transition-all duration-500`}>
       <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-6 relative">
         {/* Logo da Escola - Melhor posicionamento para mobile */}
         <div className="absolute top-2 right-2 sm:top-4 sm:right-4 z-10 sm:block">

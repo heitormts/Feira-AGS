@@ -21,13 +21,16 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ current, total, trilhas, onTr
               index === current
                 ? (trilha.color === 'orange' ? 'bg-orange-500 text-white shadow-lg' :
                    trilha.color === 'yellow' ? 'bg-yellow-500 text-white shadow-lg' :
+                   trilha.color === 'indigo' ? 'bg-indigo-500 text-white shadow-lg' :
                    `bg-${trilha.color}-600 text-white shadow-lg`)
                 : index < current
                 ? (trilha.color === 'orange' ? 'bg-orange-100 text-orange-700 hover:bg-orange-200' :
                    trilha.color === 'yellow' ? 'bg-yellow-100 text-yellow-700 hover:bg-yellow-200' :
+                   trilha.color === 'indigo' ? 'bg-indigo-100 text-indigo-700 hover:bg-indigo-200' :
                    `bg-${trilha.color}-100 text-${trilha.color}-700 hover:bg-${trilha.color}-200`)
                 : (trilha.color === 'orange' ? 'bg-gray-100 text-gray-600 hover:bg-orange-50' :
                    trilha.color === 'yellow' ? 'bg-gray-100 text-gray-600 hover:bg-yellow-50' :
+                   trilha.color === 'indigo' ? 'bg-gray-100 text-gray-600 hover:bg-indigo-50' :
                    `bg-gray-100 text-gray-600 hover:bg-${trilha.color}-50`)
             }`}
           >
@@ -50,6 +53,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ current, total, trilhas, onTr
             className={`h-2 rounded-full transition-all duration-500 ${
               trilhas[current].color === 'orange' ? 'bg-gradient-to-r from-orange-500 to-green-600' :
               trilhas[current].color === 'yellow' ? 'bg-gradient-to-r from-yellow-500 to-green-600' :
+              trilhas[current].color === 'indigo' ? 'bg-gradient-to-r from-indigo-500 to-green-600' :
               `bg-gradient-to-r from-${trilhas[current].color}-600 to-green-600`
             }`}
             style={{ width: `${((current + 1) / total) * 100}%` }}

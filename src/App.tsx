@@ -8,6 +8,7 @@ import TrilhaCurriculoPage from './components/pages/TrilhaCurriculoPage';
 import TrilhaExperimentacoesPage from './components/pages/TrilhaExperimentacoesPage';
 import TrilhaInclusaoPage from './components/pages/TrilhaInclusaoPage';
 import TrilhaRelatos from './components/pages/TrilhaRelatos';
+import TrilhaCidadaniaPage from './components/pages/TrilhaCidadaniaPage';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -58,6 +59,13 @@ const App: React.FC = () => {
     },
     { 
       id: 6, 
+      title: "Serviço de Cidadania", 
+      color: "indigo", 
+      bgColor: "from-indigo-50 to-blue-50",
+      cardBg: "bg-indigo-50"
+    },
+    { 
+      id: 7, 
       title: "Relato de Experiências", 
       color: "yellow", 
       bgColor: "from-yellow-50 to-amber-50",
@@ -96,6 +104,8 @@ const App: React.FC = () => {
       case 5:
         return <TrilhaInclusaoPage />;
       case 6:
+        return <TrilhaCidadaniaPage />;
+      case 7:
         return <TrilhaRelatos />;
       default:
         return <HomePage />;
@@ -132,6 +142,16 @@ const App: React.FC = () => {
       case 'pink':
         return {
           bg: 'bg-rose-500 hover:bg-rose-600',
+          disabled: 'bg-gray-300'
+        };
+      case 'indigo':
+        return {
+          bg: 'bg-indigo-500 hover:bg-indigo-600',
+          disabled: 'bg-gray-300'
+        };
+      case 'indigo':
+        return {
+          bg: 'bg-indigo-500 hover:bg-indigo-600',
           disabled: 'bg-gray-300'
         };
       default:

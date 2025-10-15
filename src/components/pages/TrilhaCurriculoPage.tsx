@@ -30,6 +30,57 @@ const TrilhaCurriculoPage: React.FC = () => {
           </p>
         </div>
 
+        {/* Tipos de Currículo */}
+        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 sm:p-8">
+          <h2 className="text-lg sm:text-2xl font-bold text-blue-800 mb-6">Tipos de Currículo</h2>
+          
+          <div className="space-y-6">
+            <div className="bg-white rounded-lg p-4 sm:p-6 border border-blue-200">
+              <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
+                Currículo Tradicional (Físico/Digital)
+              </h3>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
+                É o formato mais comum e amplamente utilizado no mercado de trabalho. Pode ser entregue impresso 
+                ou enviado digitalmente em formato PDF. Contém informações essenciais como dados pessoais, 
+                formação acadêmica, experiências profissionais, cursos e habilidades.
+              </p>
+              <div className="bg-blue-50 p-3 rounded-lg">
+                <p className="text-xs sm:text-sm text-blue-800 font-semibold">
+                  💡 Ideal para: Processos seletivos tradicionais, vagas em empresas de todos os portes, 
+                  primeiro emprego e estágios.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg p-4 sm:p-6 border border-green-200">
+              <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+                Currículo Lattes
+              </h3>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
+                É uma plataforma online do CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico) 
+                que padroniza informações curriculares de estudantes e pesquisadores no Brasil. É mais detalhado 
+                e inclui produção científica, participação em eventos, projetos de pesquisa e atividades acadêmicas.
+              </p>
+              <div className="bg-green-50 p-3 rounded-lg">
+                <p className="text-xs sm:text-sm text-green-800 font-semibold">
+                  💡 Ideal para: Bolsas de estudo, programas de iniciação científica, pós-graduação, 
+                  concursos públicos na área acadêmica e processos seletivos em universidades.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 sm:p-6">
+              <h3 className="text-base sm:text-lg font-bold text-yellow-800 mb-3">Qual escolher?</h3>
+              <div className="space-y-2 text-sm sm:text-base text-gray-700">
+                <p><strong>Para estudantes do ensino médio:</strong> O currículo tradicional é mais adequado para estágios, programas jovem aprendiz e primeiras oportunidades de trabalho.</p>
+                <p><strong>Para quem quer seguir carreira acadêmica:</strong> É importante ter ambos - o tradicional para oportunidades no mercado e o Lattes para atividades de pesquisa e bolsas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Elementos Essenciais */}
         <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-8">
           <h2 className="text-lg sm:text-2xl font-bold text-gray-800 mb-6">Elementos Essenciais do Currículo</h2>

@@ -168,6 +168,54 @@ const TrilhaInclusaoPage: React.FC = () => {
               Atividades do Projeto
             </h2>
             
+            {/* Vídeos das Atividades */}
+            <div className="bg-white border border-pink-200 rounded-xl p-6 shadow-lg mb-8">
+              <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
+                <div className="bg-pink-100 p-3 rounded-full">
+                  <Users className="w-6 h-6 text-pink-600" />
+                </div>
+                <h3 className="text-base sm:text-xl font-bold text-gray-800 text-center sm:text-left">Vídeos das Atividades</h3>
+              </div>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Primeiro Vídeo */}
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <div className="aspect-w-16 aspect-h-9 mb-4">
+                    <iframe 
+                      className="w-full h-64 rounded-lg"
+                      src="https://www.youtube.com/embed/HLnoAcnJEsc?si=ZeU7g0FN_5aXhEre" 
+                      title="Atividade do Projeto Vamos nos Permitir - Vídeo 1" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                    />
+                  </div>
+                  <h4 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
+                    Atividade do Projeto - Parte 1
+                  </h4>
+                </div>
+                
+                {/* Segundo Vídeo */}
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <div className="aspect-w-16 aspect-h-9 mb-4">
+                    <iframe 
+                      className="w-full h-64 rounded-lg"
+                      src="https://www.youtube.com/embed/K6RYSBI41TE?si=ZXTENuw-OGjDlt0p" 
+                      title="Atividade do Projeto Vamos nos Permitir - Vídeo 2" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                    />
+                  </div>
+                  <h4 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
+                    Atividade do Projeto - Parte 2
+                  </h4>
+                </div>
+              </div>
+            </div>
+            
             {atividades.map((atividade, index) => (
               <div key={index} className="bg-white border border-pink-200 rounded-xl p-6 shadow-lg">
                 <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">

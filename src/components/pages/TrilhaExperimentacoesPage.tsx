@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageSquare, MapPin, Users, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
+import { MessageSquare, MapPin, Users, Leaf, ExternalLink } from 'lucide-react';
 import ImageModal from '../ImageModal';
 
 const TrilhaExperimentacoesPage: React.FC = () => {
@@ -89,19 +89,6 @@ const TrilhaExperimentacoesPage: React.FC = () => {
 
   const visitasTecnicas = [
     {
-      titulo: "Prática Sustentável Empreendedora",
-      imagens: [
-        "https://i.ibb.co/RkpH80sk/inclusao-pratica-sustentavel-empreendora.jpg",
-        "https://i.ibb.co/fdntY01M/inclusao-pratica-sustentavel-empreendora-8.jpg",
-        "https://i.ibb.co/wr6kvLH0/inclusao-pratica-sustentavel-empreendora-7.jpg",
-        "https://i.ibb.co/2YfS7n2B/inclusao-pratica-sustentavel-empreendora-6.jpg",
-        "https://i.ibb.co/8nnkyTqR/inclusao-pratica-sustentavel-empreendora-5.jpg",
-        "https://i.ibb.co/N6WSKxYg/inclusao-pratica-sustentavel-empreendora-4.jpg",
-        "https://i.ibb.co/C55xxbJq/inclusao-pratica-sustentavel-empreendora-3.jpg",
-        "https://i.ibb.co/20NJQXPS/inclusao-pratica-sustentavel-empreendora-2.jpg"
-      ]
-    },
-    {
       titulo: "Feira do Mármore",
       imagens: [
         "https://i.ibb.co/r2DgGjcr/visita-tecnica-feira-marmore.jpg",
@@ -142,21 +129,23 @@ const TrilhaExperimentacoesPage: React.FC = () => {
         "https://i.ibb.co/Dxp3NmW/Mini-Curso-financeiro-9ano-3.jpg",
         "https://i.ibb.co/VcnQ18kB/Mini-Curso-financeiro-9ano-2.jpg"
       ]
-    },
-    {
-      titulo: "Prática Sustentável Empreendedora",
-      imagens: [
-        "https://i.ibb.co/RkpH80sk/inclusao-pratica-sustentavel-empreendora.jpg",
-        "https://i.ibb.co/fdntY01M/inclusao-pratica-sustentavel-empreendora-8.jpg",
-        "https://i.ibb.co/wr6kvLH0/inclusao-pratica-sustentavel-empreendora-7.jpg",
-        "https://i.ibb.co/2YfS7n2B/inclusao-pratica-sustentavel-empreendora-6.jpg",
-        "https://i.ibb.co/8nnkyTqR/inclusao-pratica-sustentavel-empreendora-5.jpg",
-        "https://i.ibb.co/N6WSKxYg/inclusao-pratica-sustentavel-empreendora-4.jpg",
-        "https://i.ibb.co/C55xxbJq/inclusao-pratica-sustentavel-empreendora-3.jpg",
-        "https://i.ibb.co/20NJQXPS/inclusao-pratica-sustentavel-empreendora-2.jpg"
-      ]
     }
   ];
+
+  const praticaSustentavel = {
+    titulo: "Prática Sustentável Empreendedora",
+    descricao: "A Prática Sustentável Empreendedora é uma iniciativa que conecta educação, sustentabilidade e empreendedorismo. Os estudantes desenvolvem projetos que promovem práticas ambientalmente responsáveis, aprendendo sobre negócios sustentáveis e inovação social, preparando-se para ser agentes de mudança no mercado de trabalho.",
+    imagens: [
+      "https://i.ibb.co/RkpH80sk/inclusao-pratica-sustentavel-empreendora.jpg",
+      "https://i.ibb.co/fdntY01M/inclusao-pratica-sustentavel-empreendora-8.jpg",
+      "https://i.ibb.co/wr6kvLH0/inclusao-pratica-sustentavel-empreendora-7.jpg",
+      "https://i.ibb.co/2YfS7n2B/inclusao-pratica-sustentavel-empreendora-6.jpg",
+      "https://i.ibb.co/8nnkyTqR/inclusao-pratica-sustentavel-empreendora-5.jpg",
+      "https://i.ibb.co/N6WSKxYg/inclusao-pratica-sustentavel-empreendora-4.jpg",
+      "https://i.ibb.co/C55xxbJq/inclusao-pratica-sustentavel-empreendora-3.jpg",
+      "https://i.ibb.co/20NJQXPS/inclusao-pratica-sustentavel-empreendora-2.jpg"
+    ]
+  };
 
   const openModal = (imageUrl: string, imageAlt: string) => {
     setModalImage({ url: imageUrl, alt: imageAlt });
@@ -219,6 +208,17 @@ const TrilhaExperimentacoesPage: React.FC = () => {
             <MapPin className="w-5 h-5" />
             Visitas Técnicas
           </button>
+          <button
+            onClick={() => setActiveSection('pratica')}
+            className={`flex items-center justify-center gap-2 px-3 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-xs sm:text-base ${
+              activeSection === 'pratica'
+                ? 'bg-green-600 text-white shadow-lg'
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+            }`}
+          >
+            <Leaf className="w-5 h-5" />
+            <span className="text-center">Prática Sustentável</span>
+          </button>
         </div>
 
         {/* Rodas de Conversa */}
@@ -231,24 +231,25 @@ const TrilhaExperimentacoesPage: React.FC = () => {
             {rodasConversa.map((roda, index) => (
               <div key={index} className="bg-white border border-purple-200 rounded-xl p-6 shadow-lg">
                 <div className="flex flex-col sm:flex-row items-start gap-4 mb-6">
-                  <div className="bg-purple-100 p-3 rounded-full">
-                    <Users className="w-6 h-6 text-purple-600" />
-                  </div>
                   <div className="flex-1">
-                    <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-2 break-words">{roda.tema}</h3>
-                    <p className="text-sm sm:text-base text-purple-700 font-semibold break-words">Convidado(a): {roda.convidado}</p>
+                    <h3 className="text-lg font-bold text-purple-800 mb-2">{roda.tema}</h3>
+                    <p className="text-gray-600 mb-4">
+                      <span className="font-semibold">Convidado:</span> {roda.convidado}
+                    </p>
                   </div>
                 </div>
                 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {roda.imagens.map((imagem, imgIndex) => (
-                    <div key={imgIndex} className="aspect-square overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                      <img 
-                        src={imagem} 
-                        alt={`${roda.tema} - Foto ${imgIndex + 1}`}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        onClick={() => openModal(imagem, `${roda.tema} - Foto ${imgIndex + 1}`)}
+                    <div key={imgIndex} className="relative group cursor-pointer" onClick={() => openModal(imagem, `${roda.tema} - Imagem ${imgIndex + 1}`)}>
+                      <img
+                        src={imagem}
+                        alt={`${roda.tema} - Imagem ${imgIndex + 1}`}
+                        className="w-full h-48 object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
                       />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <ExternalLink className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -261,27 +262,24 @@ const TrilhaExperimentacoesPage: React.FC = () => {
         {activeSection === 'visitas' && (
           <div className="space-y-8">
             <h2 className="text-lg sm:text-2xl font-bold text-violet-800 mb-6 text-center">
-              Dicas para Conhecer Profissões - Visitas Técnicas
+              Visitas Técnicas Realizadas
             </h2>
             
             {visitasTecnicas.map((visita, index) => (
               <div key={index} className="bg-white border border-violet-200 rounded-xl p-6 shadow-lg">
-                <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
-                  <div className="bg-violet-100 p-3 rounded-full">
-                    <MapPin className="w-6 h-6 text-violet-600" />
-                  </div>
-                  <h3 className="text-base sm:text-xl font-bold text-gray-800 text-center sm:text-left break-words">{visita.titulo}</h3>
-                </div>
+                <h3 className="text-lg font-bold text-violet-800 mb-4">{visita.titulo}</h3>
                 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {visita.imagens.map((imagem, imgIndex) => (
-                    <div key={imgIndex} className="aspect-square overflow-hidden rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
-                      <img 
-                        src={imagem} 
-                        alt={`${visita.titulo} - Foto ${imgIndex + 1}`}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        onClick={() => openModal(imagem, `${visita.titulo} - Foto ${imgIndex + 1}`)}
+                    <div key={imgIndex} className="relative group cursor-pointer" onClick={() => openModal(imagem, `${visita.titulo} - Imagem ${imgIndex + 1}`)}>
+                      <img
+                        src={imagem}
+                        alt={`${visita.titulo} - Imagem ${imgIndex + 1}`}
+                        className="w-full h-48 object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
                       />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <ExternalLink className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -290,15 +288,39 @@ const TrilhaExperimentacoesPage: React.FC = () => {
           </div>
         )}
 
-        <div className="mt-8 sm:mt-12 p-4 sm:p-6 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl text-center mx-2 sm:mx-0">
-          <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-2">
-            A Importância da Experimentação
-          </h3>
-          <p className="text-sm sm:text-base text-gray-700">
-            Essas experiências práticas são fundamentais para você conhecer diferentes profissões e descobrir 
-            qual caminho profissional faz mais sentido para o seu futuro!
-          </p>
-        </div>
+        {/* Prática Sustentável */}
+        {activeSection === 'pratica' && (
+          <div className="space-y-8">
+            <h2 className="text-lg sm:text-2xl font-bold text-green-800 mb-6 text-center">
+              Prática Sustentável Empreendedora
+            </h2>
+            
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-8 mb-8">
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                {praticaSustentavel.descricao}
+              </p>
+            </div>
+            
+            <div className="bg-white border border-green-200 rounded-xl p-6 shadow-lg">
+              <h3 className="text-lg font-bold text-green-800 mb-4">Galeria de Atividades</h3>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {praticaSustentavel.imagens.map((imagem, imgIndex) => (
+                  <div key={imgIndex} className="relative group cursor-pointer" onClick={() => openModal(imagem, `Prática Sustentável Empreendedora - Imagem ${imgIndex + 1}`)}>
+                    <img
+                      src={imagem}
+                      alt={`Prática Sustentável Empreendedora - Imagem ${imgIndex + 1}`}
+                      className="w-full h-48 object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                      <ExternalLink className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       <ImageModal
