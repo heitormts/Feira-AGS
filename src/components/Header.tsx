@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ currentTrilha }) => {
         {/* Logo da Escola - Melhor posicionamento para mobile */}
         <div className="absolute top-2 right-2 sm:top-4 sm:right-4 z-10 sm:block">
           <img
-            src="https://i.ibb.co/VWJPNBDs/Whats-App-Image-2025-08-23-at-15-09-02.jpg"
+            src="https://i.ibb.co/7NvxDgqJ/Whats-App-Image-2025-10-03-at-12-32-30-1.jpg"
             alt="Logo da Escola"
             className="w-8 h-8 sm:w-16 sm:h-16 rounded-lg shadow-lg object-cover"
           />

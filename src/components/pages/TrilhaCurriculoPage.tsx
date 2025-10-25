@@ -32,23 +32,20 @@ const TrilhaCurriculoPage: React.FC = () => {
 
         {/* Tipos de Currículo */}
         <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 sm:p-8">
-          <h2 className="text-lg sm:text-2xl font-bold text-blue-800 mb-6">Tipos de Currículo</h2>
+          <h2 className="text-lg sm:text-2xl font-bold text-blue-800 mb-6">Currículo Vitae, Currículo Lattes e LinkedIn: entendendo as diferenças</h2>
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-4 sm:p-6 border border-blue-200">
               <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
                 <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                Currículo Tradicional (Físico/Digital)
+                Currículo Vitae (CV)
               </h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
-                É o formato mais comum e amplamente utilizado no mercado de trabalho. Pode ser entregue impresso 
-                ou enviado digitalmente em formato PDF. Contém informações essenciais como dados pessoais, 
-                formação acadêmica, experiências profissionais, cursos e habilidades.
+                O Currículo Vitae (CV) é o modelo tradicional de apresentação profissional. Nele, a pessoa descreve suas informações pessoais, formação acadêmica, experiências de trabalho, cursos, habilidades e objetivos profissionais. É o tipo de currículo mais usado em processos seletivos de empresas, principalmente quando se busca o primeiro emprego ou estágio.
               </p>
               <div className="bg-blue-50 p-3 rounded-lg">
                 <p className="text-xs sm:text-sm text-blue-800 font-semibold">
-                  💡 Ideal para: Processos seletivos tradicionais, vagas em empresas de todos os portes, 
-                  primeiro emprego e estágios.
+                   Ideal para: Processos seletivos de empresas, primeiro emprego, estágios e vagas em geral.
                 </p>
               </div>
             </div>
@@ -59,23 +56,36 @@ const TrilhaCurriculoPage: React.FC = () => {
                 Currículo Lattes
               </h3>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
-                É uma plataforma online do CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico) 
-                que padroniza informações curriculares de estudantes e pesquisadores no Brasil. É mais detalhado 
-                e inclui produção científica, participação em eventos, projetos de pesquisa e atividades acadêmicas.
+                O Currículo Lattes, por sua vez, é voltado para o mundo acadêmico e científico. Ele é utilizado por pesquisadores, professores e estudantes universitários que desejam participar de projetos, bolsas de pesquisa e programas de pós-graduação. Está disponível na Plataforma Lattes, mantida pelo CNPq, e serve como registro oficial da trajetória acadêmica do profissional.
               </p>
               <div className="bg-green-50 p-3 rounded-lg">
                 <p className="text-xs sm:text-sm text-green-800 font-semibold">
-                  💡 Ideal para: Bolsas de estudo, programas de iniciação científica, pós-graduação, 
-                  concursos públicos na área acadêmica e processos seletivos em universidades.
+                   Ideal para: Projetos de pesquisa, bolsas de estudo, programas de iniciação científica, pós-graduação e área acadêmica.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg p-4 sm:p-6 border border-purple-200">
+              <h3 className="text-base sm:text-xl font-bold text-gray-800 mb-3 flex items-center gap-3">
+                <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
+                LinkedIn
+              </h3>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
+                Já o LinkedIn é uma rede social profissional online. Funciona como um currículo digital e interativo, onde é possível criar conexões com empresas e profissionais, publicar conteúdos, acompanhar vagas de emprego e construir uma marca pessoal. Além disso, é uma ferramenta dinâmica, muito usada no mercado de trabalho atual, especialmente por quem busca visibilidade e networking.
+              </p>
+              <div className="bg-purple-50 p-3 rounded-lg">
+                <p className="text-xs sm:text-sm text-purple-800 font-semibold">
+                   Ideal para: Networking, visibilidade profissional, busca de vagas online e construção de marca pessoal.
                 </p>
               </div>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 sm:p-6">
-              <h3 className="text-base sm:text-lg font-bold text-yellow-800 mb-3">Qual escolher?</h3>
+              <h3 className="text-base sm:text-lg font-bold text-yellow-800 mb-3">O que mais combina com os jovens?</h3>
               <div className="space-y-2 text-sm sm:text-base text-gray-700">
-                <p><strong>Para estudantes do ensino médio:</strong> O currículo tradicional é mais adequado para estágios, programas jovem aprendiz e primeiras oportunidades de trabalho.</p>
-                <p><strong>Para quem quer seguir carreira acadêmica:</strong> É importante ter ambos - o tradicional para oportunidades no mercado e o Lattes para atividades de pesquisa e bolsas.</p>
+                <p><strong>Para estudantes do ensino médio:</strong> O Currículo Vitae (CV) é mais adequado para estágios, programas jovem aprendiz e primeiras oportunidades de trabalho.</p>
+                <p><strong>Para quem quer seguir carreira acadêmica:</strong> É importante ter o CV para oportunidades no mercado e o Lattes para atividades de pesquisa e bolsas.</p>
+                <p><strong>Para networking e visibilidade:</strong> O LinkedIn é essencial para se conectar com profissionais e empresas, além de acompanhar oportunidades.</p>
               </div>
             </div>
           </div>

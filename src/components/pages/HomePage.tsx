@@ -84,6 +84,12 @@ const HomePage: React.FC = () => {
             color: "purple"
           },
           { 
+            title: "Entrevista para o Primeiro Emprego", 
+            description: "Dicas práticas para mandar bem na sua primeira entrevista",
+            icon: Target,
+            color: "teal"
+          },
+          { 
             title: "Experimentações", 
             description: "Rodas de conversa e visitas técnicas",
             icon: Target,

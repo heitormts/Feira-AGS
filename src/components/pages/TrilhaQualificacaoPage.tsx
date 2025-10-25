@@ -56,12 +56,11 @@ const TrilhaQualificacaoPage: React.FC = () => {
               </p>
               <p className="text-xs sm:text-base text-gray-700 font-semibold mb-3">Disponíveis em:</p>
               <ul className="text-xs sm:text-sm text-gray-700 space-y-2">
-                <li>• <strong>SENAI, SESI</strong> – Indústria (mármore e granito, Selita, Fábrica de Cimento Nassau...)</li>
-                <li>• <strong>SENAC, SESC</strong> – Comércio (Supermercados, Horti Fruti...)</li>
-                <li>• <strong>SENAT, SEST</strong> – Prestação de serviços (Hospitais, empresas de transporte...)</li>
-                <li>• <strong>SENAR</strong> – Agricultura</li>
-                <li>• <strong>SESCOOP</strong> – Cooperativismo (Sicoob, Sicred...)</li>
-                <li>• <strong>SEBRAE</strong> – Pequenos negócios (empreendedorismo)</li>
+                <li>• <strong>SENAI (Serviço Nacional de Aprendizagem Industrial):</strong> Oferece cursos técnicos e programas de aprendizagem voltados para a indústria. <a href="https://www.es.senai.br" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.es.senai.br</a></li>
+                <li>• <strong>SENAC (Serviço Nacional de Aprendizagem Comercial):</strong> Focado na formação para o comércio e serviços, com cursos técnicos e programas de estágio. <a href="https://www.sesi-es.org.br" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.sesi-es.org.br</a></li>
+                <li>• <strong>SESI (Serviço Social da Indústria):</strong> Desenvolve projetos sociais e educacionais, incluindo programas de aprendizagem. <a href="https://www.sesi-es.org.br" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.sesi-es.org.br</a></li>
+                <li>• <strong>SENAR (Serviço Nacional de Aprendizagem Rural):</strong> Voltado para a formação no setor rural, com cursos e programas de aprendizagem.</li>
+                <li>• <strong>SESC (Serviço Social do Comércio):</strong> Oferece programas educacionais e culturais, incluindo oportunidades de estágio. <a href="https://www.sesc-es.com.br" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.sesc-es.com.br</a></li>
               </ul>
             </div>
 
@@ -73,6 +72,14 @@ const TrilhaQualificacaoPage: React.FC = () => {
                 Ideal para estudantes do ensino médio, técnico ou superior. Permite colocar em prática o que você 
                 aprende na sala de aula e ainda receber uma bolsa e auxílio-transporte.
               </p>
+              
+              <div className="bg-white rounded-lg p-4 border border-purple-200 mb-4">
+                <h4 className="text-sm sm:text-base font-bold text-purple-800 mb-2">Principais entidades:</h4>
+                <ul className="text-xs sm:text-sm text-gray-700 space-y-2">
+                  <li>• <strong>CIEE:</strong> Uma das principais entidades que intermedeia vagas de estágio e aprendizagem para jovens. <a href="https://www.ciee-es.org.br" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.ciee-es.org.br</a></li>
+                  <li>• <strong>Jovens Valores:</strong> Programa de estágio do Governo do Estado do Espírito Santo que oferece vagas em órgãos estaduais, inclusive em Cachoeiro de Itapemirim. <a href="https://jovensvalores.es.gov.br/?utm_source" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">jovensvalores.es.gov.br</a></li>
+                </ul>
+              </div>
               
               <h3 className="text-sm sm:text-lg font-bold text-orange-800 mb-3 mt-6">
                 Cursos Técnicos Integrado ao Ensino Médio

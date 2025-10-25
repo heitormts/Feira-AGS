@@ -5,6 +5,7 @@ import HomePage from './components/pages/HomePage';
 import TrilhaTestePage from './components/pages/TrilhaTestePage';
 import TrilhaQualificacaoPage from './components/pages/TrilhaQualificacaoPage';
 import TrilhaCurriculoPage from './components/pages/TrilhaCurriculoPage';
+import TrilhaEntrevistaPage from './components/pages/TrilhaEntrevistaPage';
 import TrilhaExperimentacoesPage from './components/pages/TrilhaExperimentacoesPage';
 import TrilhaInclusaoPage from './components/pages/TrilhaInclusaoPage';
 import TrilhaRelatos from './components/pages/TrilhaRelatos';
@@ -45,27 +46,34 @@ const App: React.FC = () => {
     },
     { 
       id: 4, 
+      title: "Entrevista para o Primeiro Emprego", 
+      color: "teal", 
+      bgColor: "from-teal-50 to-cyan-50",
+      cardBg: "bg-teal-50"
+    },
+    { 
+      id: 5, 
       title: "Experimentações", 
       color: "purple", 
       bgColor: "from-purple-50 to-violet-50",
       cardBg: "bg-purple-50"
     },
     { 
-      id: 5, 
+      id: 6, 
       title: "Inclusão", 
       color: "pink", 
       bgColor: "from-rose-50 to-pink-50",
       cardBg: "bg-rose-50"
     },
     { 
-      id: 6, 
+      id: 7, 
       title: "Serviço de Cidadania", 
       color: "indigo", 
       bgColor: "from-indigo-50 to-blue-50",
       cardBg: "bg-indigo-50"
     },
     { 
-      id: 7, 
+      id: 8, 
       title: "Relato de Experiências", 
       color: "yellow", 
       bgColor: "from-yellow-50 to-amber-50",
@@ -100,12 +108,14 @@ const App: React.FC = () => {
       case 3:
         return <TrilhaCurriculoPage />;
       case 4:
-        return <TrilhaExperimentacoesPage />;
+        return <TrilhaEntrevistaPage />;
       case 5:
-        return <TrilhaInclusaoPage />;
+        return <TrilhaExperimentacoesPage />;
       case 6:
-        return <TrilhaCidadaniaPage />;
+        return <TrilhaInclusaoPage />;
       case 7:
+        return <TrilhaCidadaniaPage />;
+      case 8:
         return <TrilhaRelatos />;
       default:
         return <HomePage />;
@@ -117,6 +127,11 @@ const App: React.FC = () => {
       case 'orange':
         return {
           bg: 'bg-orange-500 hover:bg-orange-600',
+          disabled: 'bg-gray-300'
+        };
+      case 'teal':
+        return {
+          bg: 'bg-teal-500 hover:bg-teal-600',
           disabled: 'bg-gray-300'
         };
       case 'yellow':

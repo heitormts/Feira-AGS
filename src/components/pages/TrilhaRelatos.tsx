@@ -9,11 +9,11 @@ const TrilhaRelatos: React.FC = () => {
           <Video className="w-12 h-12 text-yellow-600" />
         </div>
         <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4 px-2">
-          6ª Trilha - Relato de Experiências dos Alunos
+          8ª Trilha - Relato de Experiências dos Alunos
         </h1>
         <p className="text-sm sm:text-base text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
           Aqui você vai conhecer os relatos dos estudantes que participaram do projeto 
-          e suas experiências durante as trilhas.
+          e suas experiências no mundo do trabalho.
         </p>
       </div>
 
@@ -30,7 +30,7 @@ const TrilhaRelatos: React.FC = () => {
           </div>
           
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-8 text-center">
-            Conheça as experiências e aprendizados dos estudantes que participaram das trilhas do projeto.
+            Conheça as experiências e aprendizados dos estudantes com o curso técnico integral.
           </p>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -110,8 +110,6 @@ const TrilhaRelatos: React.FC = () => {
 
         <div className="mt-8 p-4 sm:p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl text-center mx-2 sm:mx-0">
           <p className="text-sm sm:text-base text-gray-700">
-            Esta seção será atualizada com os vídeos dos relatos dos estudantes.
-            ( EU SEI QUE VOCES ESTAO VENDO AI NESSA REUNIAO DE HOJE COM A FABIANA , O SITE AGORA....)
           </p>
         </div>
       </div>
