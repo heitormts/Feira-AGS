@@ -12,6 +12,14 @@ const TrilhaInclusaoPage: React.FC = () => {
 
   const reunioes = [
     {
+      titulo: "Reunião com responsáveis dos alunos do AEE",
+      objetivo: "Autorização para participação dos alunos AEE no projeto.",
+      imagens: [
+        "https://i.ibb.co/fKsxPvv/Reuniao-Pais-AEE.jpg",
+        "https://i.ibb.co/Q7jrQxZT/Reuniao-Pais-AEE-2.jpg"
+      ]
+    },
+    {
       titulo: "Reunião com a Equipe AEE",
       objetivo: "Conhecer melhor as principais características dos alunos com deficiência (PcDs) da escola, por meio de uma troca de ideias super proveitosa.",
       imagem: "https://i.ibb.co/39H3nzCD/reuniao-equipe-aee.jpg"

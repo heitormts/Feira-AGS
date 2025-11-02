@@ -89,6 +89,18 @@ const TrilhaExperimentacoesPage: React.FC = () => {
 
   const visitasTecnicas = [
     {
+      titulo: "Aula de Campo - Da massa à entrega - A logística por trás da pizza",
+      imagens: [
+        "https://i.ibb.co/wNWT4npc/Da-massa-entrega-A-log-stica-por-tr-s-da-pizza-1.jpg",
+        "https://i.ibb.co/LXbG7KRZ/Da-massa-entrega-A-log-stica-por-tr-s-da-pizza-2.jpg",
+        "https://i.ibb.co/rGp5N54k/Da-massa-entrega-A-log-stica-por-tr-s-da-pizza-5.jpg",
+        "https://i.ibb.co/Wv7g2QhG/Da-massa-entrega-A-log-stica-por-tr-s-da-pizza-7.jpg",
+        "https://i.ibb.co/778f2sH/Da-massa-entrega-A-log-stica-por-tr-s-da-pizza-8.jpg",
+        "https://i.ibb.co/6k2JLWq/Da-massa-entrega-A-log-stica-por-tr-s-da-pizza-9.jpg",
+        "https://i.ibb.co/wtMdNsd/Da-massa-entrega-A-log-stica-por-tr-s-da-pizza-10.jpg"
+      ]
+    },
+    {
       titulo: "Feira do Mármore",
       imagens: [
         "https://i.ibb.co/r2DgGjcr/visita-tecnica-feira-marmore.jpg",

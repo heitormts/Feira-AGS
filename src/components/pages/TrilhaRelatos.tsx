@@ -11,10 +11,34 @@ const TrilhaRelatos: React.FC = () => {
         <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4 px-2">
           8ª Trilha - Relato de Experiências dos Alunos
         </h1>
-        <p className="text-sm sm:text-base text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-          Aqui você vai conhecer os relatos dos estudantes que participaram do projeto 
-          e suas experiências no mundo do trabalho.
-        </p>
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-4 sm:p-6 mb-6">
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+              A Trilha Relato de Experiência mostra o quanto é incrível conectar o que você aprende no Ensino Médio 
+              com tudo o que vivencia nos cursos técnicos em <strong>Recursos Humanos e Administração</strong>. 
+              Essa combinação te prepara de verdade para o futuro e aumenta suas chances de conquistar o primeiro emprego 
+              — um diferencial que faz toda a diferença!
+            </p>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+              Ao longo dessa jornada, você aprende sobre <strong>gestão de pessoas, liderança, empreendedorismo, 
+              planejamento, comunicação e trabalho em equipe</strong>, colocando tudo isso em prática em situações 
+              reais do mercado de trabalho.
+            </p>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+              As <strong>Trilhas de RH</strong> são o seu guia de orientação, ajudando a transformar sonhos e metas 
+              em conquistas e sucesso profissional.
+            </p>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+              E você, visitante do site <strong>RH AGS</strong>, pode aproveitar as dicas e experiências compartilhadas 
+              por aqui para se inspirar, começar a construir sua trajetória profissional e até descobrir qual carreira 
+              combina com você!
+            </p>
+            <p className="text-sm sm:text-base text-yellow-800 font-semibold text-center">
+              Um grande abraço,<br />
+              <strong>Equipe Trilhas de RH – 2025</strong>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="max-w-5xl mx-auto px-2 sm:px-0">

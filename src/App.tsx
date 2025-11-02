@@ -196,39 +196,39 @@ const App: React.FC = () => {
         </div>
         
         {/* Navigation Buttons */}
-        <div className="flex justify-between items-center mt-8 px-4">
+        <div className="flex justify-between items-center mt-6 sm:mt-8 px-2 sm:px-4">
           <button
             onClick={prevTrilha}
             disabled={currentTrilha === 0}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-white ${
+            className={`flex items-center gap-2 px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-white text-sm sm:text-base ${
               currentTrilha === 0 ? buttonColors.disabled : buttonColors.bg
             }`}
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             Anterior
           </button>
           
-          <span className="text-gray-600 font-medium">
+          <span className="text-gray-600 font-medium text-sm sm:text-base">
             {currentTrilha + 1} de {trilhas.length}
           </span>
           
           <button
             onClick={nextTrilha}
             disabled={currentTrilha === trilhas.length - 1}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-white ${
+            className={`flex items-center gap-2 px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-white text-sm sm:text-base ${
               currentTrilha === trilhas.length - 1 ? buttonColors.disabled : buttonColors.bg
             }`}
           >
             Próxima
-            <ChevronRight className="w-5 h-5" />
+            <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
       </div>
       
       {/* Footer */}
-      <footer className="mt-12 py-6 bg-white/80 backdrop-blur-sm border-t border-gray-200">
+      <footer className="mt-8 sm:mt-12 py-4 sm:py-6 bg-white/80 backdrop-blur-sm border-t border-gray-200">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-600 text-xs sm:text-sm">
             © 2025 Práticas de RH - Trilhas para o Sucesso. Todos os direitos reservados.
           </p>
         </div>
