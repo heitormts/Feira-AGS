@@ -8,6 +8,21 @@ const TrilhaExperimentacoesPage: React.FC = () => {
 
   const rodasConversa = [
     {
+      tema: "Bate Papo de RH - Juventude Consciente: Cooperar, Poupar e Investir",
+      convidado: "Equipe Sicoob CrediRochas Cachoeiro",
+      objetivo: "Bater um papo sobre dinheiro e escolhas inteligentes - sempre com dicas que cabem na sua realidade.",
+      imagens: [
+        "https://i.ibb.co/d43BfGkk/juventude-conciente-rh-1.jpg",
+        "https://i.ibb.co/MxkndVzW/juventude-conciente-rh-2.jpg",
+        "https://i.ibb.co/90tgBV8/juventude-conciente-rh-3.jpg",
+        "https://i.ibb.co/ks9BYCsq/juventude-conciente-rh-4.jpg",
+        "https://i.ibb.co/Rp8JYtZK/juventude-conciente-rh-5.jpg",
+        "https://i.ibb.co/v68W8dvc/juventude-conciente-rh-6.jpg",
+        "https://i.ibb.co/VWRp20XL/juventude-conciente-rh-7.jpg",
+        "https://i.ibb.co/Y4743X9L/juventude-conciente-rh-8.jpg"
+      ]
+    },
+    {
       tema: "Quem é Profissional graduado em Recursos Humanos?",
       convidado: "Gestor de Pessoas e Psicólogo Rodrigo Ribeiro",
       imagens: [
@@ -248,6 +263,13 @@ const TrilhaExperimentacoesPage: React.FC = () => {
                     <p className="text-gray-600 mb-4">
                       <span className="font-semibold">Convidado:</span> {roda.convidado}
                     </p>
+                    {roda.objetivo && (
+                      <div className="bg-purple-50 border-l-4 border-purple-400 p-3 rounded-r-lg mb-4">
+                        <p className="text-sm text-gray-700">
+                          <span className="font-semibold text-purple-800">Objetivo:</span> {roda.objetivo}
+                        </p>
+                      </div>
+                    )}
                   </div>
                 </div>
                 
