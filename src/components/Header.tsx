@@ -37,20 +37,13 @@ const Header: React.FC<HeaderProps> = ({ currentTrilha }) => {
   return (
     <header className={`bg-white shadow-lg border-b-4 ${getHeaderColor(currentTrilha.color)} transition-all duration-500`}>
       <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-6 relative">
-        {/* Logo da Escola - Melhor posicionamento para mobile */}
-        <div className="absolute top-2 right-2 sm:top-4 sm:right-4 z-10">
-          <img
-            src="https://i.ibb.co/7NvxDgqJ/Whats-App-Image-2025-10-03-at-12-32-30-1.jpg"
-            alt="Logo da Escola"
-            className="w-10 h-10 sm:w-16 sm:h-16 rounded-lg shadow-lg object-cover"
-          />
-        </div>
-        
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
-          <div className="flex items-center gap-3 sm:gap-4 pr-12 sm:pr-20">
-            <div className="bg-blue-600 p-3 rounded-xl">
-              <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
-            </div>
+          <div className="flex items-center gap-3 sm:gap-4">
+            <img
+              src="https://i.ibb.co/7NvxDgqJ/Whats-App-Image-2025-10-03-at-12-32-30-1.jpg"
+              alt="Logo da Escola"
+              className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg object-cover"
+            />
             <div>
               <h1 className="text-sm sm:text-2xl font-bold text-gray-800 text-center sm:text-left leading-tight">
                 Práticas de RH - Trilhas para o Sucesso

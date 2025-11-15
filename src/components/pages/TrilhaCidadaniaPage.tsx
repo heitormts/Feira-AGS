@@ -55,7 +55,7 @@ const TrilhaCidadaniaPage: React.FC = () => {
       link: "https://agenda.es.gov.br/",
       qrCode: "https://i.ibb.co/Ps8693tB/QR-CODE-RG.png",
       icon: FileText,
-      color: "indigo"
+      color: "green"
     },
     {
       titulo: "Carteira de Trabalho (CTPS)",
@@ -64,7 +64,7 @@ const TrilhaCidadaniaPage: React.FC = () => {
       link: "https://servicos.mte.gov.br/spme-v2/#/login",
       qrCode: "https://i.ibb.co/dwTSsrZN/QR-CODE-carteira-trabalho.png",
       icon: CreditCard,
-      color: "yellow"
+      color: "slate"
     },
     {
       titulo: "CNH Social",
@@ -79,8 +79,14 @@ const TrilhaCidadaniaPage: React.FC = () => {
       titulo: "Doação de Sangue",
       descricao: "Doar sangue é um ato de solidariedade que salva vidas e mostra que você se importa com os outros. No Brasil, quem tem a partir de 16 anos, está com boa saúde e tem autorização dos responsáveis, já pode doar! Uma única doação pode ajudar até 4 pessoas que estão precisando.",
       instrucoes: "Aponte a câmera do celular para o QR Code aqui do lado ou acesse o link.",
-      link: "https://hemoes.es.gov.br/",
-      qrCode: "https://i.ibb.co/Nb3MpxX/QR-CODE-Doacao-sangue.png",
+      links: [
+        "https://www.heci.com.br/noticia/banco-de-sangue-do-hospital-evangelico--cachoeiro-necessita-de-doadores",
+        "https://santacasacachoeiro.com.br/pacientes-e-visitantes/banco-de-sangue/"
+      ],
+      qrCodes: [
+        "https://i.ibb.co/Spbq656/QR-Code-Doacao-sangue.png",
+        "https://i.ibb.co/pvXtSGzB/QR-code-doacao-sangue-2.png"
+      ],
       icon: Droplets,
       color: "red"
     },
@@ -151,31 +157,66 @@ const TrilhaCidadaniaPage: React.FC = () => {
                     <h3 className="text-sm sm:text-base font-semibold text-gray-800 mb-2">Como criar sua conta:</h3>
                     <p className="text-xs sm:text-sm text-gray-700 mb-4">{servico.instrucoes}</p>
                     
-                    <a
-                      href={servico.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`inline-flex items-center gap-2 bg-${servico.color}-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-${servico.color}-700 transition-colors duration-300 text-xs sm:text-sm`}
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Acessar Serviço
-                    </a>
+                    {servico.titulo !== "Doação de Sangue" && (
+                      <a
+                        href={servico.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-2 bg-${servico.color}-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-${servico.color}-700 transition-colors duration-300 text-xs sm:text-sm`}
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Acessar Serviço
+                      </a>
+                    )}
                   </div>
                 </div>
                 
                 {/* QR Code */}
                 <div className="flex flex-col items-center justify-center bg-gray-50 rounded-lg p-6">
-                  <div className="bg-white p-4 rounded-lg shadow-md mb-3">
-                    <img
-                      src={servico.qrCode}
-                      alt={`QR Code para ${servico.titulo}`}
-                      className="w-32 h-32 sm:w-40 sm:h-40 object-contain"
-                    />
-                  </div>
-                  <div className="flex items-center gap-2 text-gray-600">
-                    <QrCode className="w-4 h-4" />
-                    <span className="text-xs sm:text-sm font-medium">Escaneie o QR Code</span>
-                  </div>
+                  {servico.qrCodes ? (
+                    <div className="space-y-4">
+                      {servico.qrCodes.map((qrCode, qrIndex) => (
+                        <div key={qrIndex} className="flex flex-col items-center">
+                          <div className="bg-white p-4 rounded-lg shadow-md mb-3">
+                            <img
+                              src={qrCode}
+                              alt={`QR Code ${qrIndex + 1} para ${servico.titulo}`}
+                              className="w-32 h-32 sm:w-40 sm:h-40 object-contain"
+                            />
+                          </div>
+                          {servico.links && servico.links[qrIndex] && (
+                            <a
+                              href={servico.links[qrIndex]}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={`inline-flex items-center gap-2 bg-${servico.color}-600 text-white px-3 py-2 rounded-lg font-semibold hover:bg-${servico.color}-700 transition-colors duration-300 text-xs mb-2`}
+                            >
+                              <ExternalLink className="w-3 h-3" />
+                              Acessar {qrIndex === 0 ? 'HECI' : 'Santa Casa'}
+                            </a>
+                          )}
+                        </div>
+                      ))}
+                      <div className="flex items-center gap-2 text-gray-600">
+                        <QrCode className="w-4 h-4" />
+                        <span className="text-xs sm:text-sm font-medium">Escaneie os QR Codes</span>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex flex-col items-center">
+                      <div className="bg-white p-4 rounded-lg shadow-md mb-3">
+                        <img
+                          src={servico.qrCode}
+                          alt={`QR Code para ${servico.titulo}`}
+                          className="w-32 h-32 sm:w-40 sm:h-40 object-contain"
+                        />
+                      </div>
+                      <div className="flex items-center gap-2 text-gray-600">
+                        <QrCode className="w-4 h-4" />
+                        <span className="text-xs sm:text-sm font-medium">Escaneie o QR Code</span>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -185,7 +226,7 @@ const TrilhaCidadaniaPage: React.FC = () => {
         {/* Mensagem Final */}
         <div className="mt-12 p-6 sm:p-8 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl text-center">
           <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-4">
-            🌟 Exercite sua Cidadania!
+             Exercite sua Cidadania!
           </h3>
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
             Esses serviços são ferramentas poderosas para você exercer seus direitos e deveres como cidadão. 

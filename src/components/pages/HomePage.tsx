@@ -20,10 +20,10 @@ const HomePage: React.FC = () => {
         <div className="flex flex-col items-center gap-6">
           <div className="relative">
             <img
-              src="https://i.ibb.co/QjfsRffh/Whats-App-Image-2025-07-29-at-15-41-19-1.jpg" 
+              src="https://i.ibb.co/pjRZns9g/AGOSTINHO.jpg" 
               alt="Agostinho - Mascote do Projeto"
               className="w-16 h-16 sm:w-32 sm:h-32 rounded-full object-cover shadow-xl cursor-pointer hover:scale-105 transition-transform duration-300"
-              onClick={() => openModal("https://i.ibb.co/QjfsRffh/Whats-App-Image-2025-07-29-at-15-41-19-1.jpg", "Agostinho - Mascote do Projeto")}
+              onClick={() => openModal("https://i.ibb.co/pjRZns9g/AGOSTINHO.jpg", "Agostinho - Mascote do Projeto")}
             />
             <div className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 bg-blue-600 text-white p-1 sm:p-2 rounded-full">
               <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
