@@ -53,9 +53,6 @@ const Header: React.FC<HeaderProps> = ({ currentTrilha }) => {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-2 bg-blue-50 px-3 sm:px-4 py-2 rounded-xl hidden lg:flex">
-            <Users className="w-5 h-5 text-blue-600" />
-            <span className="text-blue-700 font-semibold text-sm sm:text-base"></span>
           </div>
         </div>
       </div>
