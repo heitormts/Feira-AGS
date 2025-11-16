@@ -53,7 +53,6 @@ const Header: React.FC<HeaderProps> = ({ currentTrilha }) => {
               </p>
             </div>
           </div>
-          </div>
         </div>
       </div>
     </header>

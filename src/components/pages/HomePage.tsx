@@ -33,9 +33,6 @@ const HomePage: React.FC = () => {
           <div className="relative max-w-4xl w-full px-3 sm:px-2">
             <div className="bg-blue-50 border-l-4 border-blue-500 p-3 sm:p-6 rounded-r-xl shadow-lg">
               <div className="flex flex-col sm:flex-row items-start gap-4">
-                <div className="bg-blue-600 text-white p-2 rounded-full flex-shrink-0 mx-auto sm:mx-0">
-                  <User className="w-4 h-4 sm:w-5 sm:h-5" />
-                </div>
                 <div className="text-left w-full">
                   <h2 className="text-sm sm:text-xl font-bold text-blue-800 mb-2 sm:mb-3 text-center sm:text-left">
                     Ei, eu sou o Agostinho!
