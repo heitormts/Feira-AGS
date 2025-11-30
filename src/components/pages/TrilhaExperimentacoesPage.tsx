@@ -159,6 +159,13 @@ const TrilhaExperimentacoesPage: React.FC = () => {
     }
   ];
 
+  const visitasComVideo = [
+    {
+      titulo: "Visita Técnica - Faculdade Americas Cachoeiro",
+      videoUrl: "https://www.youtube.com/embed/tsaIf9qEvxY?si=Cg2ldVkKoSTA2IQg"
+    }
+  ];
+
   const praticaSustentavel = {
     titulo: "Prática Sustentável Empreendedora",
     descricao: "A Prática Sustentável Empreendedora é uma iniciativa que conecta educação, sustentabilidade e empreendedorismo. Os estudantes desenvolvem projetos que promovem práticas ambientalmente responsáveis, aprendendo sobre negócios sustentáveis e inovação social, preparando-se para ser agentes de mudança no mercado de trabalho.",
@@ -316,6 +323,25 @@ const TrilhaExperimentacoesPage: React.FC = () => {
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+            ))}
+            
+            {/* Visitas Técnicas com Vídeo */}
+            {visitasComVideo.map((visita, index) => (
+              <div key={`video-${index}`} className="bg-white border border-violet-200 rounded-xl p-6 shadow-lg">
+                <h3 className="text-lg font-bold text-violet-800 mb-4">{visita.titulo}</h3>
+                
+                <div className="aspect-w-16 aspect-h-9">
+                  <iframe 
+                    className="w-full h-64 sm:h-80 rounded-lg"
+                    src={visita.videoUrl}
+                    title={visita.titulo}
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                  />
                 </div>
               </div>
             ))}

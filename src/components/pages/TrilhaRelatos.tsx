@@ -58,12 +58,11 @@ const TrilhaRelatos: React.FC = () => {
           </p>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Vídeo 1 */}
             <div className="bg-white rounded-lg p-4 shadow-md">
               <div className="aspect-w-16 aspect-h-9 mb-4">
                 <iframe 
                   className="w-full h-64 rounded-lg"
-                  src="https://www.youtube.com/embed/OhEnUHpSQRQ?si=c86G_QbiV1p2FUxE" 
+                  src="https://www.youtube.com/embed/ZMxWbFdlM0s?si=ahDdvb2oiKMYFbUi" 
                   title="Relato de Experiência - Estudante 1" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -76,12 +75,11 @@ const TrilhaRelatos: React.FC = () => {
               </h4>
             </div>
             
-            {/* Vídeo 2 */}
             <div className="bg-white rounded-lg p-4 shadow-md">
               <div className="aspect-w-16 aspect-h-9 mb-4">
                 <iframe 
                   className="w-full h-64 rounded-lg"
-                  src="https://www.youtube.com/embed/B0mIpjSY8ic?si=ocSBBoE3DTHQcfVZ" 
+                  src="https://www.youtube.com/embed/Y71rcLcQ9j0?si=UpfqgV9Mxv0eGTHu" 
                   title="Relato de Experiência - Estudante 2" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -94,12 +92,11 @@ const TrilhaRelatos: React.FC = () => {
               </h4>
             </div>
             
-            {/* Vídeo 3 */}
             <div className="bg-white rounded-lg p-4 shadow-md">
               <div className="aspect-w-16 aspect-h-9 mb-4">
                 <iframe 
                   className="w-full h-64 rounded-lg"
-                  src="https://www.youtube.com/embed/6wHu1Pd3O-w?si=W0fXKZKQ_njLO3Qd" 
+                  src="https://www.youtube.com/embed/NbH4ZcKQMHk?si=hPNnF-qAFQJeFN6A" 
                   title="Relato de Experiência - Estudante 3" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -109,24 +106,6 @@ const TrilhaRelatos: React.FC = () => {
               </div>
               <h4 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
                 Relato de Experiência - Estudante 3
-              </h4>
-            </div>
-            
-            {/* Vídeo 4 */}
-            <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="aspect-w-16 aspect-h-9 mb-4">
-                <iframe 
-                  className="w-full h-64 rounded-lg"
-                  src="https://www.youtube.com/embed/q6p2C3SjQJ8?si=czxphlHSW64qPQFU" 
-                  title="Relato de Experiência - Estudante 4" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  allowFullScreen
-                />
-              </div>
-              <h4 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
-                Relato de Experiência - Estudante 4
               </h4>
             </div>
           </div>
