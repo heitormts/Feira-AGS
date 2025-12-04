@@ -24,6 +24,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ current, total, trilhas, onTr
                    trilha.color === 'indigo' ? 'bg-indigo-500 text-white shadow-lg' :
                    trilha.color === 'teal' ? 'bg-teal-500 text-white shadow-lg' :
                    trilha.color === 'pink' ? 'bg-rose-500 text-white shadow-lg' :
+                   trilha.color === 'amber' ? 'bg-amber-500 text-white shadow-lg' :
                    `bg-${trilha.color}-600 text-white shadow-lg`)
                 : index < current
                 ? (trilha.color === 'orange' ? 'bg-orange-100 text-orange-700 hover:bg-orange-200' :
@@ -31,12 +32,14 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ current, total, trilhas, onTr
                    trilha.color === 'indigo' ? 'bg-indigo-100 text-indigo-700 hover:bg-indigo-200' :
                    trilha.color === 'teal' ? 'bg-teal-100 text-teal-700 hover:bg-teal-200' :
                    trilha.color === 'pink' ? 'bg-rose-100 text-rose-700 hover:bg-rose-200' :
+                  trilha.color === 'amber' ? 'bg-amber-100 text-amber-700 hover:bg-amber-200' :
                    `bg-${trilha.color}-100 text-${trilha.color}-700 hover:bg-${trilha.color}-200`)
                 : (trilha.color === 'orange' ? 'bg-gray-100 text-gray-600 hover:bg-orange-50' :
                    trilha.color === 'yellow' ? 'bg-gray-100 text-gray-600 hover:bg-yellow-50' :
                    trilha.color === 'indigo' ? 'bg-gray-100 text-gray-600 hover:bg-indigo-50' :
                    trilha.color === 'teal' ? 'bg-gray-100 text-gray-600 hover:bg-teal-50' :
                    trilha.color === 'pink' ? 'bg-gray-100 text-gray-600 hover:bg-rose-50' :
+                  trilha.color === 'amber' ? 'bg-gray-100 text-gray-600 hover:bg-amber-50' :
                    `bg-gray-100 text-gray-600 hover:bg-${trilha.color}-50`)
             }`}
           >
@@ -62,6 +65,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ current, total, trilhas, onTr
               trilhas[current].color === 'indigo' ? 'bg-gradient-to-r from-indigo-500 to-green-600' :
               trilhas[current].color === 'teal' ? 'bg-gradient-to-r from-teal-500 to-green-600' :
               trilhas[current].color === 'pink' ? 'bg-gradient-to-r from-rose-500 to-green-600' :
+              trilhas[current].color === 'amber' ? 'bg-gradient-to-r from-amber-500 to-green-600' :
               `bg-gradient-to-r from-${trilhas[current].color}-600 to-green-600`
             }`}
             style={{ width: `${((current + 1) / total) * 100}%` }}

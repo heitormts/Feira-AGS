@@ -87,6 +87,12 @@ const HomePage: React.FC = () => {
             color: "teal"
           },
           { 
+            title: "Mini Dicionário de RH", 
+            description: "Vocabulário essencial do mundo profissional",
+            icon: Target,
+            color: "amber"
+          },
+          { 
             title: "Experimentações", 
             description: "Rodas de conversa e visitas técnicas",
             icon: Target,

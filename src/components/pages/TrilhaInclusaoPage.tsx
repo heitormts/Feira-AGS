@@ -64,7 +64,7 @@ const TrilhaInclusaoPage: React.FC = () => {
           <Heart className="w-12 h-12 text-rose-600" />
         </div>
         <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4 px-2">
-          6ª Trilha - Inclusão
+          7ª Trilha - Inclusão
         </h1>
         <h2 className="text-lg sm:text-2xl font-semibold text-rose-700 mb-4 px-2">
           Projeto "Vamos nos Permitir"

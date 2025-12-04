@@ -196,7 +196,7 @@ const TrilhaExperimentacoesPage: React.FC = () => {
           <MessageSquare className="w-12 h-12 text-purple-600" />
         </div>
         <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4 px-2">
-          5ª Trilha - Experimentações
+          6ª Trilha - Experimentações
         </h1>
         <p className="text-sm sm:text-base text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
           Agora é a hora de participar das Rodas de Conversa de RH! Além disso, também vão rolar visitas técnicas 

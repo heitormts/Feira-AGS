@@ -29,6 +29,8 @@ const Header: React.FC<HeaderProps> = ({ currentTrilha }) => {
         return 'border-teal-500';
       case 'indigo':
         return 'border-indigo-500';
+      case 'amber':
+        return 'border-amber-500';
       default:
         return 'border-blue-500';
     }
