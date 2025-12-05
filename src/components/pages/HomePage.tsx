@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   
   // URL do áudio do Agostinho hospedado no Google Drive
-  const AGOSTINHO_AUDIO_URL = 'https://drive.google.com/file/d/1jR2bmd62F3p64X9ny_wgtdPWYNwJsQQG/preview';
+  const AGOSTINHO_AUDIO_URL = 'https://drive.google.com/file/d/1jR2bmd62F3p64X9ny_wgtdPWYNwJsQQG/view?usp=sharing';
 
   const openModal = (imageUrl: string, imageAlt: string) => {
     setModalImage({ url: imageUrl, alt: imageAlt });
