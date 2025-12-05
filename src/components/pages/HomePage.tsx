@@ -92,12 +92,12 @@ const HomePage = () => {
                         {showAudioPlayer ? (
                           <>
                             <Pause className="w-4 h-4" />
-                            Fechar Player
+                            Parar de ouvir
                           </>
                         ) : (
                           <>
                             <Play className="w-4 h-4" />
-                            Abrir Player
+                            Ouvir mensagem
                           </>
                         )}
                       </button>
