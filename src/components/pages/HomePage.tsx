@@ -1,9 +1,14 @@
-import React from 'react';
-import { User, Target, Sparkles } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { User, Target, Sparkles, Play, Pause, Volume2 } from 'lucide-react';
 import ImageModal from '../ImageModal';
 
 const HomePage: React.FC = () => {
   const [modalImage, setModalImage] = React.useState<{ url: string; alt: string } | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  
+  // URL do áudio do Agostinho hospedado no Google Drive
+  const AGOSTINHO_AUDIO_URL = 'https://drive.google.com/uc?export=download&id=1jR2bmd62F3p64X9ny_wgtdPWYNwJsQQG';
 
   const openModal = (imageUrl: string, imageAlt: string) => {
     setModalImage({ url: imageUrl, alt: imageAlt });
@@ -13,6 +18,33 @@ const HomePage: React.FC = () => {
     setModalImage(null);
   };
 
+  const togglePlayPause = () => {
+    if (!audioRef.current) {
+      audioRef.current = new Audio(AGOSTINHO_AUDIO_URL);
+      audioRef.current.addEventListener('ended', () => {
+        setIsPlaying(false);
+      });
+    }
+
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      audioRef.current.play().catch((error) => {
+        console.error('Erro ao reproduzir áudio:', error);
+      });
+      setIsPlaying(true);
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
   return (
     <div className="p-4 sm:p-8 overflow-x-hidden">
       {/* Hero Section com Agostinho */}
@@ -52,6 +84,32 @@ const HomePage: React.FC = () => {
                   <p className="text-xs sm:text-base text-blue-700 font-semibold break-words">
                     Ah, e se você é da <strong>geração Alpha</strong>, fica tranquilo(a), porque tudo isso também serve pra você!
                   </p>
+                  
+                  {/* Botão de Áudio do Agostinho */}
+                  <div className="mt-4 pt-4 border-t border-blue-200">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                      <div className="flex items-center gap-2 text-blue-700">
+                        <Volume2 className="w-4 h-4" />
+                        <span className="text-xs sm:text-sm font-medium">Ouça a mensagem do Agostinho:</span>
+                      </div>
+                      <button
+                        onClick={togglePlayPause}
+                        className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-xs sm:text-sm"
+                      >
+                        {isPlaying ? (
+                          <>
+                            <Pause className="w-4 h-4" />
+                            Pausar
+                          </>
+                        ) : (
+                          <>
+                            <Play className="w-4 h-4" />
+                            Reproduzir
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
