@@ -126,6 +126,28 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* Vídeo de Apresentação */}
+      <div className="max-w-4xl mx-auto mb-8 sm:mb-12 px-3 sm:px-0">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe 
+              className="w-full h-64 sm:h-96 rounded-t-xl"
+              src="https://www.youtube.com/embed/dsCjKErbj30?si=lO7r752ceaq2dDpD" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+            />
+          </div>
+          <div className="p-4 sm:p-6 bg-gradient-to-r from-blue-50 to-purple-50">
+            <h3 className="text-sm sm:text-lg font-semibold text-gray-800 text-center">
+              Vídeo em libras da mensagem do agostinho
+            </h3>
+          </div>
+        </div>
+      </div>
+
       {/* Cards das Trilhas */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 mt-4 sm:mt-12 px-3 sm:px-0">
         {[
