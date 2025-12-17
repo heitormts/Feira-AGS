@@ -1,32 +1,16 @@
-import React, { useState } from 'react';
-import { Target, Sparkles, Play, Pause, Volume2 } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { User, Target, Sparkles, Play, Pause, Volume2 } from 'lucide-react';
+import ImageModal from '../ImageModal';
 
-const ImageModal = ({ isOpen, imageUrl, imageAlt, onClose }) => {
-  if (!isOpen) return null;
+const HomePage: React.FC = () => {
+  const [modalImage, setModalImage] = React.useState<{ url: string; alt: string } | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   
-  return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" onClick={onClose}>
-      <div className="relative max-w-4xl max-h-[90vh]">
-        <img src={imageUrl} alt={imageAlt} className="max-w-full max-h-[90vh] object-contain rounded-lg" />
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-200"
-        >
-          Fechar
-        </button>
-      </div>
-    </div>
-  );
-};
+  // URL do áudio do Agostinho hospedado no Google Drive
+  const AGOSTINHO_AUDIO_URL = 'https://drive.google.com/uc?export=download&id=1jR2bmd62F3p64X9ny_wgtdPWYNwJsQQG';
 
-const HomePage = () => {
-  const [modalImage, setModalImage] = useState(null);
-  const [showAudioPlayer, setShowAudioPlayer] = useState(false);
-  
-  // URL do SoundCloud
-  const SOUNDCLOUD_URL = 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2224486892&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true';
-
-  const openModal = (imageUrl, imageAlt) => {
+  const openModal = (imageUrl: string, imageAlt: string) => {
     setModalImage({ url: imageUrl, alt: imageAlt });
   };
 
@@ -34,9 +18,33 @@ const HomePage = () => {
     setModalImage(null);
   };
 
-  const toggleAudioPlayer = () => {
-    setShowAudioPlayer(!showAudioPlayer);
+  const togglePlayPause = () => {
+    if (!audioRef.current) {
+      audioRef.current = new Audio(AGOSTINHO_AUDIO_URL);
+      audioRef.current.addEventListener('ended', () => {
+        setIsPlaying(false);
+      });
+    }
+
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      audioRef.current.play().catch((error) => {
+        console.error('Erro ao reproduzir áudio:', error);
+      });
+      setIsPlaying(true);
+    }
   };
+
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
 
   return (
     <div className="p-4 sm:p-8 overflow-x-hidden">
@@ -80,43 +88,27 @@ const HomePage = () => {
                   
                   {/* Botão de Áudio do Agostinho */}
                   <div className="mt-4 pt-4 border-t border-blue-200">
-                    <div className="flex flex-col items-center gap-3">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                       <div className="flex items-center gap-2 text-blue-700">
                         <Volume2 className="w-4 h-4" />
                         <span className="text-xs sm:text-sm font-medium">Ouça a mensagem do Agostinho:</span>
                       </div>
                       <button
-                        onClick={toggleAudioPlayer}
+                        onClick={togglePlayPause}
                         className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-xs sm:text-sm"
                       >
-                        {showAudioPlayer ? (
+                        {isPlaying ? (
                           <>
                             <Pause className="w-4 h-4" />
-                            Parar de ouvir
+                            Pausar
                           </>
                         ) : (
                           <>
                             <Play className="w-4 h-4" />
-                            Ouvir mensagem
+                            Reproduzir
                           </>
                         )}
                       </button>
-                      
-                      {/* Player de Áudio do SoundCloud */}
-                      {showAudioPlayer && (
-                        <div className="w-full mt-3 bg-white rounded-lg shadow-lg overflow-hidden border border-blue-200">
-                          <iframe
-                            width="100%"
-                            height="166"
-                            scrolling="no"
-                            frameBorder="no"
-                            allow="autoplay"
-                            src={SOUNDCLOUD_URL}
-                            title="Áudio do Agostinho no SoundCloud"
-                            className="rounded-lg"
-                          />
-                        </div>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -201,6 +193,55 @@ const HomePage = () => {
         <p className="text-xs sm:text-base text-gray-600">
           Use os botões de navegação abaixo para percorrer todas as trilhas no seu ritmo!
         </p>
+      </div>
+
+      {/* Seção da Equipe - NOVO */}
+      <div className="mt-8 sm:mt-16 p-4 sm:p-8 bg-white rounded-xl shadow-lg mx-3 sm:mx-0">
+        <h2 className="text-lg sm:text-2xl font-bold text-center text-gray-800 mb-6 sm:mb-8">
+          Equipe de Construção do Projeto
+        </h2>
+        
+        {/* Orientação */}
+        <div className="mb-6 sm:mb-8 p-4 sm:p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-600">
+          <h3 className="text-sm sm:text-lg font-bold text-blue-800 mb-2">Professora Orientadora</h3>
+          <p className="text-xs sm:text-base text-gray-700">
+            <strong>Fabiana S. Souto Tomé</strong> - Especialista em RH
+          </p>
+        </div>
+
+        {/* Desenvolvimento */}
+        <div className="mb-6 sm:mb-8 p-4 sm:p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border-l-4 border-purple-600">
+          <h3 className="text-sm sm:text-lg font-bold text-purple-800 mb-2">Desenvolvimento</h3>
+          <p className="text-xs sm:text-base text-gray-700">
+            <strong>Heitor Motta</strong> - Desenvolvedor do Site (2ª RH)
+          </p>
+        </div>
+
+        {/* Equipe de Colaboradores */}
+        <div className="p-4 sm:p-6 bg-gradient-to-r from-green-50 to-teal-50 rounded-lg border-l-4 border-green-600">
+          <h3 className="text-sm sm:text-lg font-bold text-green-800 mb-4">Equipe de Colaboradores</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+            {[
+              { nome: "Ana Carolina", turma: "2ª ADM2" },
+              { nome: "Eduardo", turma: "2ª RH" },
+              { nome: "Heitor", turma: "2ª ADM1" },
+              { nome: "Iury", turma: "2ª ADM1" },
+              { nome: "Jackson", turma: "2ª ADM1" },
+              { nome: "Jean", turma: "2ª ADM1" },
+              { nome: "João", turma: "1ª ADM" },
+              { nome: "Luiza", turma: "2ª ADM1" },
+              { nome: "Mariana", turma: "2ª ADM2" },
+              { nome: "Matheus", turma: "2ª ADM2" },
+              { nome: "Shopia", turma: "2ª ADM1" },
+              { nome: "Yuri", turma: "3ª ADM1" }
+            ].map((membro, index) => (
+              <div key={index} className="bg-white p-2 sm:p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <p className="text-xs sm:text-sm font-semibold text-gray-800">{membro.nome}</p>
+                <p className="text-xs text-gray-600">{membro.turma}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <ImageModal
