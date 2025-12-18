@@ -181,17 +181,17 @@ const HomePage = () => {
             icon: Target,
             color: "amber"
           },
-          { 
-            title: "Experimentações", 
-            description: "Rodas de conversa e visitas técnicas",
-            icon: Target,
-            color: "orange"
-          },
           {
             title:  "Gamificação",
             description: "Aprender pode ser divertido!",
             icon : Target,
             color: "blue"
+          },
+          { 
+            title: "Experimentações", 
+            description: "Rodas de conversa e visitas técnicas",
+            icon: Target,
+            color: "orange"
           },
           { 
             title: "Inclusão", 
