@@ -108,7 +108,7 @@ const TrilhaCidadaniaPage: React.FC = () => {
           <Users className="w-12 h-12 text-indigo-600" />
         </div>
         <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4 px-2">
-          8ª Trilha - Serviço de Cidadania
+          9ª Trilha - Serviço de Cidadania
         </h1>
       </div>
 

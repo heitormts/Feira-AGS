@@ -142,7 +142,7 @@ const HomePage = () => {
           </div>
           <div className="p-4 sm:p-6 bg-gradient-to-r from-blue-50 to-purple-50">
             <h3 className="text-sm sm:text-lg font-semibold text-gray-800 text-center">
-              Mensagem em libras do Agostinho
+              Vídeo em libras da mensagem do agostinho
             </h3>
           </div>
         </div>

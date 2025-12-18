@@ -9,7 +9,7 @@ const TrilhaRelatos: React.FC = () => {
           <Video className="w-12 h-12 text-yellow-600" />
         </div>
         <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-4 px-2">
-          9ª Trilha - Relato de Experiências dos Alunos
+          10ª Trilha - Relato de Experiências dos Alunos
         </h1>
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-xl p-4 sm:p-6 mb-6">
