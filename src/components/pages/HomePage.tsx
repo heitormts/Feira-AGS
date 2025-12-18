@@ -187,6 +187,12 @@ const HomePage = () => {
             icon: Target,
             color: "orange"
           },
+          {
+            title:  "Gamificação",
+            description: "Aprender pode ser divertido!",
+            icon : Target,
+            color: "blue"
+          },
           { 
             title: "Inclusão", 
             description: "Projeto 'Vamos nos Permitir'",
