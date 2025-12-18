@@ -219,7 +219,7 @@ const TrilhaCurriculoPage: React.FC = () => {
               </div>
               
               <a
-                href="https://docs.google.com/document/d/1bEwQoo0Te8s6QKv6G3Jm4C6MgTMGFE7k/edit?usp=sharing&ouid=105786342409223073619&rtpof=true&sd=true"
+                href="https://online.fliphtml5.com/vrpiu/gujv/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-green-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-300 flex items-center justify-center gap-2 text-xs sm:text-base"
