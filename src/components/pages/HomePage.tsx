@@ -268,8 +268,8 @@ const HomePage = () => {
               { nome: "Luiza", turma: "2ª ADM1" },
               { nome: "Mariana", turma: "2ª ADM2" },
               { nome: "Matheus", turma: "2ª ADM2" },
-              { nome: "Shopia", turma: "2ª ADM1" },
-              { nome: "Yuri", turma: "3ª ADM1" }
+              { nome: "Sophia", turma: "2ª ADM1" },
+              { nome: "Yuri", turma: "3ª ADM2" }
             ].map((membro, index) => (
               <div key={index} className="bg-white p-2 sm:p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <p className="text-xs sm:text-sm font-semibold text-gray-800">{membro.nome}</p>
