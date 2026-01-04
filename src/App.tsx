@@ -254,7 +254,7 @@ const App: React.FC = () => {
       <footer className="mt-8 sm:mt-12 py-4 sm:py-6 bg-white/80 backdrop-blur-sm border-t border-gray-200">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-600 text-xs sm:text-sm">
-            © 2025 Práticas de RH - Trilhas para o Sucesso. Todos os direitos reservados.
+            © 2026 Práticas de RH - Trilhas para o Sucesso. Todos os direitos reservados.
           </p>
         </div>
       </footer>
