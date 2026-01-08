@@ -26,7 +26,7 @@ const TrilhaExperimentacoesPage: React.FC = () => {
       tema: "Quem é Profissional graduado em Recursos Humanos?",
       convidado: "Gestor de Pessoas e Psicólogo Rodrigo Ribeiro",
       imagens: [
-        "https://i.ibb.co/Ngmrf254/rodas-conversa-rhrodrigoribeiro.jpg",
+        "https://img.freepik.com/vetores-premium/doodle-pagina-404-com-lupa-texto-desenhado-a-mao-pagina-nao-encontrada-e-botao-de-casa_213092-462.jpg?semt=ais_hybrid&w=740&q=80",
         "https://i.ibb.co/TBLLtkQY/rodas-conversa-rhrodrigoribeiro-4.jpg",
         "https://i.ibb.co/gFg75M6b/rodas-conversa-rhrodrigoribeiro-3.jpg",
         "https://i.ibb.co/RTcbVK07/rodas-conversa-rhrodrigoribeiro-2.jpg"
