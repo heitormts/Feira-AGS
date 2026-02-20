@@ -262,7 +262,6 @@ const HomePage = () => {
               { nome: "Eduardo", turma: "2ª RH" },
               { nome: "Heitor", turma: "2ª ADM1" },
               { nome: "Iury", turma: "2ª ADM1" },
-              { nome: "Jackson", turma: "2ª ADM1" },
               { nome: "Jean", turma: "2ª ADM1" },
               { nome: "João", turma: "1ª ADM" },
               { nome: "Luiza", turma: "2ª ADM1" },
