@@ -26,78 +26,78 @@ const TrilhaExperimentacoesPage: React.FC = () => {
       tema: "Quem é Profissional graduado em Recursos Humanos?",
       convidado: "Gestor de Pessoas e Psicólogo Rodrigo Ribeiro",
       imagens: [
-        "https://img.freepik.com/vetores-premium/doodle-pagina-404-com-lupa-texto-desenhado-a-mao-pagina-nao-encontrada-e-botao-de-casa_213092-462.jpg?semt=ais_hybrid&w=740&q=80",
-        "https://i.ibb.co/TBLLtkQY/rodas-conversa-rhrodrigoribeiro-4.jpg",
-        "https://i.ibb.co/gFg75M6b/rodas-conversa-rhrodrigoribeiro-3.jpg",
-        "https://i.ibb.co/RTcbVK07/rodas-conversa-rhrodrigoribeiro-2.jpg"
+        "https://i.ibb.co/qYWtGnmr/Whats-App-Image-2026-03-11-at-21-36-56.jpg",
+        "https://i.ibb.co/0pbk3WX7/Whats-App-Image-2026-03-11-at-21-36-55-1.jpg",
+        "https://i.ibb.co/s9HdhmKX/Whats-App-Image-2026-03-11-at-21-36-55.jpg",
+        "https://i.ibb.co/TqKxN7gr/Whats-App-Image-2026-03-11-at-21-36-54.jpg"
       ]
     },
     {
       tema: "Quem é o Profissional graduado em Psicologia?",
       convidado: "Psicóloga Júlia Sartório",
       imagens: [
-        "https://i.ibb.co/DHbqrqnH/rodas-conversa-psicologia-julia-sartorio.jpg",
-        "https://i.ibb.co/fYPmyShS/rodas-conversa-psicologia-julia-sartorio-4.jpg",
-        "https://i.ibb.co/8464Lftg/rodas-conversa-psicologia-julia-sartorio-3.jpg",
-        "https://i.ibb.co/gLFLWMVL/rodas-conversa-psicologia-julia-sartorio-2.jpg"
+        "https://i.ibb.co/qYWtGnmr/Whats-App-Image-2026-03-11-at-21-36-56.jpg",
+        "https://i.ibb.co/0pbk3WX7/Whats-App-Image-2026-03-11-at-21-36-55-1.jpg",
+        "https://i.ibb.co/s9HdhmKX/Whats-App-Image-2026-03-11-at-21-36-55.jpg",
+        "https://i.ibb.co/TqKxN7gr/Whats-App-Image-2026-03-11-at-21-36-54.jpg"
       ]
     },
     {
       tema: "Quem é o profissional graduado em Direito?",
       convidado: "Coordenador Curso de Direito Faculdade Anhanguera Cachoeiro – Victor Schiavo",
       imagens: [
-        "https://i.ibb.co/nshYxn6f/rodas-conversa-vitin-direito.jpg",
-        "https://i.ibb.co/5X0JP2hj/rodas-conversa-vitin-direito-2.jpg"
+        "https://i.ibb.co/xZ7y3kC/Whats-App-Image-2026-03-11-at-21-36-59.jpg",
+        "https://i.ibb.co/0RYFVXJY/Whats-App-Image-2026-03-11-at-21-36-58-1.jpg"
       ]
     },
     {
       tema: "Quem é o profissional graduado em Ciências Contábeis?",
       convidado: "Representante CRC Jovem - ES - Gustavo Brandão",
       imagens: [
-        "https://i.ibb.co/7JZcCdpJ/rodas-conversa-ciencias-contabeis-4.jpg",
-        "https://i.ibb.co/m5GrjNjc/rodas-conversa-ciencias-contabeis.jpg",
-        "https://i.ibb.co/998cXyzp/rodas-conversa-ciencias-contabeis-2.jpg",
-        "https://i.ibb.co/3yfNkbBk/rodas-conversa-ciencias-contabeis-3.jpg"
+        "https://i.ibb.co/JF5npb6d/Whats-App-Image-2026-03-11-at-21-37-00-2.jpg",
+        "https://i.ibb.co/Kz0gZYdR/Whats-App-Image-2026-03-11-at-21-37-00-1.jpg",
+        "https://i.ibb.co/gBg2vVN/Whats-App-Image-2026-03-11-at-21-37-00.jpg",
+        "https://i.ibb.co/0pDnxVZX/Whats-App-Image-2026-03-11-at-21-36-59-1.jpg"
       ]
     },
     {
       tema: "Quem é o Profissional graduado em Enfermagem?",
       convidado: "Enfermeira Coordenadora Setor de Hemodiálise – HECI- Cachoeiro – Joelice Gonçalves",
       imagens: [
-        "https://i.ibb.co/x8S7VV4B/rodas-conversa-enfermagem.jpg",
-        "https://i.ibb.co/BHvS7jcz/rodas-conversa-enfermagem-4.jpg",
-        "https://i.ibb.co/whm2wy7x/rodas-conversa-enfermagem-3.jpg",
-        "https://i.ibb.co/9995rCLZ/rodas-conversa-enfermagem-2.jpg"
+        "https://i.ibb.co/vxwjHBy3/Whats-App-Image-2026-03-11-at-21-37-01-3.jpg",
+        "https://i.ibb.co/tPv3SJFY/Whats-App-Image-2026-03-11-at-21-37-01-2.jpg",
+        "https://i.ibb.co/S4Rx7FVK/Whats-App-Image-2026-03-11-at-21-37-01-1.jpg",
+        "https://i.ibb.co/yBhWTC14/Whats-App-Image-2026-03-11-at-21-37-01.jpg"
       ]
     },
     {
       tema: "Quem é o Profissional graduado em Medicina?",
       convidado: "Médico Nefrologista - HECI- Cachoeiro - Dr° Sérgio Damião",
       imagens: [
-        "https://i.ibb.co/9CM4t9F/rodas-conversa-sergiodamiao.jpg",
-        "https://i.ibb.co/chqf8JP5/rodas-conversa-sergiodamiao-4.jpg",
-        "https://i.ibb.co/JWSX17Np/rodas-conversa-sergiodamiao-3.jpg",
-        "https://i.ibb.co/8gKfVRMY/rodas-conversa-sergiodamiao-2.jpg"
+        "https://i.ibb.co/wZcnp799/Whats-App-Image-2026-03-11-at-21-37-04.jpg",
+        "https://i.ibb.co/d0ZRym39/Whats-App-Image-2026-03-11-at-21-37-03-1.jpg",
+        "https://i.ibb.co/fYnMmBgN/Whats-App-Image-2026-03-11-at-21-37-03.jpg",
+        "https://i.ibb.co/39TZ6rK4/Whats-App-Image-2026-03-11-at-21-37-02.jpg"
       ]
     },
     {
       tema: "Como funciona uma Empresa do Mármore e Granito enfatizando o setor de Logística?",
       convidado: "Técnico em Administração – Inspetor de Qualidade. Empresa: Brazilian Stones",
       imagens: [
-        "https://i.ibb.co/ttXp5hY/rodas-conversa-marmore-brazilian-Stones.jpg",
-        "https://i.ibb.co/8g4Q2WSm/rodas-conversa-marmore-brazilian-Stones-3.jpg",
-        "https://i.ibb.co/PsBnVP6F/rodas-conversa-marmore-brazilian-Stones-4.jpg",
-        "https://i.ibb.co/7NGDKH2j/rodas-conversa-marmore-brazilian-Stones-2.jpg"
+        "https://i.ibb.co/WvFm0P5b/Whats-App-Image-2026-03-11-at-21-37-06-1.jpg",
+        "https://i.ibb.co/zHByB8Yx/Whats-App-Image-2026-03-11-at-21-37-06.jpg",
+        "https://i.ibb.co/Kz5XCtNh/Whats-App-Image-2026-03-11-at-21-37-05.jpg",
+        "https://i.ibb.co/yFLQqQFY/Whats-App-Image-2026-03-11-at-21-37-04-1.jpg"
       ]
     },
     {
       tema: "Gerenciamento do Estresse: O Caminho para uma Vida de Qualidade",
       convidado: "Júlia Sartório – Psicóloga. Abordagem de Técnicas básicas de Tai Chi Chuan",
       imagens: [
-        "https://i.ibb.co/spz9hCNb/rodas-conversa-estresse-julia.jpg",
-        "https://i.ibb.co/7dzn8NYW/rodas-conversa-estresse-julia-3.jpg",
-        "https://i.ibb.co/nNLLxmHB/rodas-conversa-estresse-julia-4.jpg",
-        "https://i.ibb.co/C3q89hR9/rodas-conversa-estresse-julia-2.jpg"
+        "https://i.ibb.co/VG7Hfz7/Whats-App-Image-2026-03-11-at-21-37-07.jpg",
+        "https://i.ibb.co/wN0CbCFQ/Whats-App-Image-2026-03-11-at-21-37-08-1.jpg",
+        "https://i.ibb.co/wFVxLTkt/Whats-App-Image-2026-03-11-at-21-37-09.jpg",
+        "https://i.ibb.co/0jYt8THC/Whats-App-Image-2026-03-11-at-21-37-08.jpg"
       ]
     }
   ];
