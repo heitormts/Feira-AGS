@@ -129,13 +129,13 @@ const TrilhaExperimentacoesPage: React.FC = () => {
     {
       titulo: "Mundo Senai",
       imagens: [
-        "https://i.ibb.co/Zp0d8SFY/visita-tecnica-senai.jpg",
-        "https://i.ibb.co/TqbD7dwd/visita-tecnica-senai-6.jpg",
-        "https://i.ibb.co/mx0pZ3H/visita-tecnica-senai-7.jpg",
-        "https://i.ibb.co/twQ135BT/visita-tecnica-senai-5.jpg",
-        "https://i.ibb.co/KpR9LhMK/visita-tecnica-senai-4.jpg",
-        "https://i.ibb.co/prM3wGq1/visita-tecnica-senai-3.jpg",
-        "https://i.ibb.co/HLLQ73HX/visita-tecnica-senai-2.jpg"
+        "https://i.ibb.co/fzvXsSMN/Whats-App-Image-2026-03-11-at-21-37-15.jpg",
+        "https://i.ibb.co/d4DBpYtp/Whats-App-Image-2026-03-11-at-21-37-10.jpg",
+        "https://i.ibb.co/9mLmxKK3/Whats-App-Image-2026-03-11-at-21-37-11.jpg",
+        "https://i.ibb.co/GQf6vgTw/Whats-App-Image-2026-03-11-at-21-37-12.jpg",
+        "https://i.ibb.co/20pjV6pP/Whats-App-Image-2026-03-11-at-21-37-13-1.jpg",
+        "https://i.ibb.co/fV1QRHVP/Whats-App-Image-2026-03-11-at-21-37-13.jpg",
+        "https://i.ibb.co/67ZhswJ6/Whats-App-Image-2026-03-11-at-21-37-14.jpg"
       ]
     },
     {
