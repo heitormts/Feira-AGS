@@ -67,7 +67,7 @@ const TrilhaExperimentacoesPage: React.FC = () => {
         "https://i.ibb.co/vxwjHBy3/Whats-App-Image-2026-03-11-at-21-37-01-3.jpg",
         "https://i.ibb.co/tPv3SJFY/Whats-App-Image-2026-03-11-at-21-37-01-2.jpg",
         "https://i.ibb.co/S4Rx7FVK/Whats-App-Image-2026-03-11-at-21-37-01-1.jpg",
-        ""
+        "https://i.ibb.co/yBhWTC14/Whats-App-Image-2026-03-11-at-21-37-01.jpg"
       ]
     },
     {
@@ -151,7 +151,7 @@ const TrilhaExperimentacoesPage: React.FC = () => {
       titulo: "Mini curso de Educação Financeira",
       imagens: [
         "https://i.ibb.co/NHtK3Pv/Whats-App-Image-2026-03-11-at-21-37-20-1.jpg",
-        https://i.ibb.co/vvxN9wrJ/Whats-App-Image-2026-03-11-at-21-37-20.jpg",
+        "https://i.ibb.co/vvxN9wrJ/Whats-App-Image-2026-03-11-at-21-37-20.jpg",
         "https://i.ibb.co/pBzJXdmn/Whats-App-Image-2026-03-11-at-21-37-19-1.jpg",
         "https://i.ibb.co/whDn73N6/Whats-App-Image-2026-03-11-at-21-37-19.jpg",
         "https://i.ibb.co/S7RhNnxv/Whats-App-Image-2026-03-11-at-21-37-18-2.jpg"
