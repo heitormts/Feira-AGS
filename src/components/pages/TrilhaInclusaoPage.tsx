@@ -22,30 +22,30 @@ const TrilhaInclusaoPage: React.FC = () => {
     {
       titulo: "Reunião com a Equipe AEE",
       objetivo: "Conhecer melhor as principais características dos alunos com deficiência (PcDs) da escola, por meio de uma troca de ideias super proveitosa.",
-      imagem: "https://i.ibb.co/39H3nzCD/reuniao-equipe-aee.jpg"
+      imagem: "https://i.ibb.co/V0921S8h/Whats-App-Image-2026-03-11-at-23-14-52.jpg"
     },
     {
       titulo: "Entrevista com Thaís - Psicóloga Programa APOIE – SEDU",
       objetivo: "Ouvir o relato da entrevistada sobre sua experiência ajudando a montar o edital do processo de Recrutamento e Seleção de pessoas com deficiência (PcDs) na Câmara Municipal de Cachoeiro de Itapemirim — destacando como um currículo bem feito faz diferença na hora da contratação.",
-      imagem: "https://i.ibb.co/TxPbvrMn/Entrevista-com-Tha-s-Psic-loga.jpg"
+      imagem: "https://i.ibb.co/hFxWGJtm/Whats-App-Image-2026-03-11-at-23-14-52-1.jpg"
     },
     {
       titulo: "Entrevista com Matheus - Analista de RH Grupo Perim",
       objetivo: "Entender como a empresa faz o processo de Recrutamento e Seleção, principalmente na hora de contratar pessoas com deficiência (PCD).",
       imagens: [
-        "https://i.ibb.co/jv49w7b2/entrevista-matheus-rh-analista.jpg",
-        "https://i.ibb.co/67hmLt96/entrevista-matheus-rh-analista-2.jpg"
+        "https://i.ibb.co/LznX7MtS/Whats-App-Image-2026-03-11-at-23-14-53-1.jpg",
+        "https://i.ibb.co/wrj3n3sF/Whats-App-Image-2026-03-11-at-23-14-53.jpg"
       ]
     },
     {
       titulo: "Reunião com Mônica Pitanga - Fundadora da ONG Mova-se",
       objetivo: "Compreender o papel da instituição como ferramenta de inclusão na sociedade cachoeirense.",
-      imagem: "https://i.ibb.co/35g69fPL/Reuniao-com-Monica-Pitanga.jpg"
+      imagem: "https://i.ibb.co/MD8vr7Hf/Whats-App-Image-2026-03-11-at-23-14-53-2.jpg"
     },
     {
       titulo: "Reunião com Dr. Djailson Martins Rocha - Procurador do Ministério Público do Trabalho",
       objetivo: "Entender como funciona a Lei de Cotas para pessoas com deficiência (PCDs) nas empresas, qual é o papel do Ministério Público do Trabalho de Cachoeiro para garantir que ela seja cumprida, e ouvir do Procurador como essa lei está sendo aplicada nas empresas da nossa cidade.",
-      imagem: "https://i.ibb.co/N6RRHJy2/reuniao-Dr-Djailson-Martins.jpg"
+      imagem: "https://i.ibb.co/pBYPJ39q/Whats-App-Image-2026-03-11-at-23-14-54.jpg"
     }
   ];
 
