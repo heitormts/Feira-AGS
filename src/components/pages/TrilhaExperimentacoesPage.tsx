@@ -8,7 +8,7 @@ const TrilhaExperimentacoesPage: React.FC = () => {
 
   const rodasConversa = [
     {
-      tema: "Bate Papo de Recursos Humanos - Juventude Consciente: Cooperar, Poupar e Investir",
+      tema: "Bate Papo de RH - Juventude Consciente: Cooperar, Poupar e Investir",
       convidado: "Equipe Sicoob CrediRochas Cachoeiro",
       objetivo: "Bater um papo sobre dinheiro e escolhas inteligentes - sempre com dicas que cabem na sua realidade.",
       imagens: [
