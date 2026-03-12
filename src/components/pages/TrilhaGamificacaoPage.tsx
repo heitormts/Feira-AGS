@@ -114,39 +114,46 @@ const TrilhaGamificacaoPage: React.FC = () => {
 
           {/* Baralho Projeto de Vida */}
           <div className="bg-white border border-purple-200 rounded-xl p-6 sm:p-8 shadow-lg">
-            <div className="flex flex-col sm:flex-row items-center gap-6">
-              <div className="bg-purple-100 p-4 rounded-full">
-                <Target className="w-8 h-8 text-purple-600" />
-              </div>
-              <div className="flex-1 text-center sm:text-left">
-                <h3 className="text-lg sm:text-2xl font-bold text-purple-800 mb-4">
-                  Baralho do Projeto de Vida
-                </h3>
-                <p className="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed">
-                  Explore o Baralho do Projeto de Vida de forma interativa! Uma ferramenta gamificada 
-                  que te ajuda a refletir sobre seus objetivos, sonhos e planos para o futuro.
-                </p>
-                
-                <div className="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-6">
-                  <h4 className="text-sm sm:text-base font-semibold text-purple-800 mb-2">O que você vai encontrar:</h4>
-                  <ul className="text-xs sm:text-sm text-gray-700 space-y-1 text-left">
-                    <li>• Cartas interativas para reflexão</li>
-                    <li>• Atividades de autoconhecimento</li>
-                    <li>• Exercícios de planejamento de carreira</li>
-                    <li>• Dicas para construir seu projeto de vida</li>
-                  </ul>
+            <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col sm:flex-row items-center gap-4 w-full">
+                <div className="bg-purple-100 p-4 rounded-full">
+                  <Target className="w-8 h-8 text-purple-600" />
                 </div>
-                
-                <a
-                  href="https://online.fliphtml5.com/vrpiu/vhbo/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base"
-                >
-                  <Trophy className="w-5 h-5" />
-                  Acessar Baralho Interativo
-                  <ExternalLink className="w-4 h-4" />
-                </a>
+                <div className="text-center sm:text-left">
+                  <h3 className="text-lg sm:text-2xl font-bold text-purple-800 mb-2">
+                    Baralho do Projeto de Vida
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                    Explore o Baralho do Projeto de Vida de forma interativa! Uma ferramenta gamificada 
+                    que te ajuda a refletir sobre seus objetivos, sonhos e planos para o futuro.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-purple-50 border border-purple-200 rounded-lg p-4 w-full">
+                <h4 className="text-sm sm:text-base font-semibold text-purple-800 mb-2">O que você vai encontrar:</h4>
+                <ul className="text-xs sm:text-sm text-gray-700 space-y-1">
+                  <li>• Cartas interativas para reflexão</li>
+                  <li>• Atividades de autoconhecimento</li>
+                  <li>• Exercícios de planejamento de carreira</li>
+                  <li>• Dicas para construir seu projeto de vida</li>
+                </ul>
+              </div>
+
+              {/* Iframe incorporado */}
+              <div className="w-full rounded-xl overflow-hidden border border-purple-200 shadow-md">
+                <div style={{ position: 'relative', paddingTop: 'max(60%, 324px)', width: '100%', height: 0 }}>
+                  <iframe
+                    style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: 0, top: 0 }}
+                    src="https://online.fliphtml5.com/vrpiu/vhbo/index.html"
+                    title="Baralho do Projeto de Vida .pdf_20251205_210303_0000"
+                    seamless
+                    scrolling="no"
+                    frameBorder="0"
+                    allowTransparency={true}
+                    allowFullScreen={true}
+                  />
+                </div>
               </div>
             </div>
           </div>
