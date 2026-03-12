@@ -85,7 +85,7 @@ const TrilhaMiniDicionarioPage: React.FC = () => {
             </p>
             
             <a
-              href="https://pxllnk.co/j2zczltrh"
+              href="https://online.fliphtml5.com/vrpiu/fgxi/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-amber-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-amber-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base"
