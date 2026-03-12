@@ -107,7 +107,7 @@ const TrilhaQualificacaoPage: React.FC = () => {
               
               <div className="mb-4 text-center overflow-hidden">
                 <img 
-                  src="https://i.ibb.co/XrYYnXj2/Foto-Cursos-Online.jpg" 
+                  src="https://i.ibb.co/FLYPWhRZ/Whats-App-Image-2026-03-11-at-21-36-53.jpg" 
                   alt="Plataformas de Cursos Online"
                   className="w-full max-w-xs sm:max-w-md mx-auto rounded-lg border border-gray-300 object-contain"
                 />
