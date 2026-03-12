@@ -67,7 +67,7 @@ const TrilhaExperimentacoesPage: React.FC = () => {
         "https://i.ibb.co/vxwjHBy3/Whats-App-Image-2026-03-11-at-21-37-01-3.jpg",
         "https://i.ibb.co/tPv3SJFY/Whats-App-Image-2026-03-11-at-21-37-01-2.jpg",
         "https://i.ibb.co/S4Rx7FVK/Whats-App-Image-2026-03-11-at-21-37-01-1.jpg",
-        "https://i.ibb.co/yBhWTC14/Whats-App-Image-2026-03-11-at-21-37-01.jpg"
+        ""
       ]
     },
     {
