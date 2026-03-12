@@ -118,12 +118,12 @@ const TrilhaExperimentacoesPage: React.FC = () => {
     {
       titulo: "Feira do Mármore",
       imagens: [
-        "https://i.ibb.co/r2DgGjcr/visita-tecnica-feira-marmore.jpg",
-        "https://i.ibb.co/SX4MTd4P/visita-tecnica-feira-marmore-6.jpg",
-        "https://i.ibb.co/zVLNkL5Z/visita-tecnica-feira-marmore-5.jpg",
-        "https://i.ibb.co/x8SSGsph/visita-tecnica-feira-marmore-4.jpg",
-        "https://i.ibb.co/rG7wZSwC/visita-tecnica-feira-marmore-3.jpg",
-        "https://i.ibb.co/kgKBNjGh/visita-tecnica-feira-marmore-2.jpg"
+        "https://i.ibb.co/7JMtLfZJ/Whats-App-Image-2026-03-11-at-21-37-23.jpg",
+        "https://i.ibb.co/BVBWWNpz/Whats-App-Image-2026-03-11-at-21-37-16-2.jpg",
+        "https://i.ibb.co/cXKBBRKR/Whats-App-Image-2026-03-11-at-21-37-16-1.jpg",
+        "https://i.ibb.co/1pWc9rv/Whats-App-Image-2026-03-11-at-21-37-16.jpg",
+        "https://i.ibb.co/vCrkHpDC/Whats-App-Image-2026-03-11-at-21-37-15.jpg",
+        "https://i.ibb.co/gL2s3XCN/Whats-App-Image-2026-03-11-at-21-37-24.jpg"
       ]
     },
     {
@@ -141,20 +141,20 @@ const TrilhaExperimentacoesPage: React.FC = () => {
     {
       titulo: "Visita Técnica a Empresa Cofril",
       imagens: [
-        "https://i.ibb.co/C5Dg9Q7v/visita-tecnica-cofril-4.jpg",
-        "https://i.ibb.co/q3ZfYsjD/visita-tecnica-cofril.jpg",
-        "https://i.ibb.co/PzNLSRh1/visita-tecnica-cofril-3.jpg",
-        "https://i.ibb.co/HTnTGfqs/visita-tecnica-cofril-2.jpg"
+        "https://i.ibb.co/vxdkqTpQ/Whats-App-Image-2026-03-11-at-21-37-18-1.jpg",
+        "https://i.ibb.co/TMT2Kbf3/Whats-App-Image-2026-03-11-at-21-37-18.jpg",
+        "https://i.ibb.co/zh0Xb8xQ/Whats-App-Image-2026-03-11-at-21-37-17-1.jpg",
+        "https://i.ibb.co/B5P4R73p/Whats-App-Image-2026-03-11-at-21-37-17.jpg"
       ]
     },
     {
       titulo: "Mini curso de Educação Financeira",
       imagens: [
-        "https://i.ibb.co/DHD0nVnQ/Mini-Curso-financeiro-9ano.jpg",
-        "https://i.ibb.co/8nRgVpSn/Mini-Curso-financeiro-9ano-5.jpg",
-        "https://i.ibb.co/bM2sGTc7/Mini-Curso-financeiro-9ano-4.jpg",
-        "https://i.ibb.co/Dxp3NmW/Mini-Curso-financeiro-9ano-3.jpg",
-        "https://i.ibb.co/VcnQ18kB/Mini-Curso-financeiro-9ano-2.jpg"
+        "https://i.ibb.co/NHtK3Pv/Whats-App-Image-2026-03-11-at-21-37-20-1.jpg",
+        https://i.ibb.co/vvxN9wrJ/Whats-App-Image-2026-03-11-at-21-37-20.jpg",
+        "https://i.ibb.co/pBzJXdmn/Whats-App-Image-2026-03-11-at-21-37-19-1.jpg",
+        "https://i.ibb.co/whDn73N6/Whats-App-Image-2026-03-11-at-21-37-19.jpg",
+        "https://i.ibb.co/S7RhNnxv/Whats-App-Image-2026-03-11-at-21-37-18-2.jpg"
       ]
     }
   ];
@@ -170,14 +170,14 @@ const TrilhaExperimentacoesPage: React.FC = () => {
     titulo: "Prática Sustentável Empreendedora",
     descricao: "A Prática Sustentável Empreendedora é uma iniciativa que conecta educação, sustentabilidade e empreendedorismo. Os estudantes desenvolvem projetos que promovem práticas ambientalmente responsáveis, aprendendo sobre negócios sustentáveis e inovação social, preparando-se para ser agentes de mudança no mercado de trabalho.",
     imagens: [
-      "https://i.ibb.co/RkpH80sk/inclusao-pratica-sustentavel-empreendora.jpg",
-      "https://i.ibb.co/fdntY01M/inclusao-pratica-sustentavel-empreendora-8.jpg",
-      "https://i.ibb.co/wr6kvLH0/inclusao-pratica-sustentavel-empreendora-7.jpg",
-      "https://i.ibb.co/2YfS7n2B/inclusao-pratica-sustentavel-empreendora-6.jpg",
-      "https://i.ibb.co/8nnkyTqR/inclusao-pratica-sustentavel-empreendora-5.jpg",
-      "https://i.ibb.co/N6WSKxYg/inclusao-pratica-sustentavel-empreendora-4.jpg",
-      "https://i.ibb.co/C55xxbJq/inclusao-pratica-sustentavel-empreendora-3.jpg",
-      "https://i.ibb.co/20NJQXPS/inclusao-pratica-sustentavel-empreendora-2.jpg"
+      "https://i.ibb.co/HfvJ3LYz/Whats-App-Image-2026-03-11-at-21-37-25.jpg",
+      "https://i.ibb.co/S7s4D42t/Whats-App-Image-2026-03-11-at-21-37-24.jpg",
+      "https://i.ibb.co/S4vZDdK6/Whats-App-Image-2026-03-11-at-21-37-23.jpg",
+      "https://i.ibb.co/3mDpSVbT/Whats-App-Image-2026-03-11-at-21-37-22-2.jpg",
+      "https://i.ibb.co/tpnJnPs3/Whats-App-Image-2026-03-11-at-21-37-22-1.jpg",
+      "https://i.ibb.co/Q7sRHdGv/Whats-App-Image-2026-03-11-at-21-37-22.jpg",
+      "https://i.ibb.co/S4xyJndy/Whats-App-Image-2026-03-11-at-21-37-21.jpg",
+      "https://i.ibb.co/39Vjr4XR/Whats-App-Image-2026-03-11-at-21-37-20-2.jpg"
     ]
   };
 
