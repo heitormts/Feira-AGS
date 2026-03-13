@@ -36,10 +36,10 @@ const TrilhaExperimentacoesPage: React.FC = () => {
       tema: "Quem é o Profissional graduado em Psicologia?",
       convidado: "Psicóloga Júlia Sartório",
       imagens: [
-        "https://i.ibb.co/qYWtGnmr/Whats-App-Image-2026-03-11-at-21-36-56.jpg",
-        "https://i.ibb.co/0pbk3WX7/Whats-App-Image-2026-03-11-at-21-36-55-1.jpg",
-        "https://i.ibb.co/s9HdhmKX/Whats-App-Image-2026-03-11-at-21-36-55.jpg",
-        "https://i.ibb.co/TqKxN7gr/Whats-App-Image-2026-03-11-at-21-36-54.jpg"
+        "https://i.ibb.co/zhj6qhHr/Whats-App-Image-2026-03-11-at-21-36-58.jpg",
+        "https://i.ibb.co/67XL2vRf/Whats-App-Image-2026-03-11-at-21-36-57-2.jpg",
+        "https://i.ibb.co/4wT6Cs3H/Whats-App-Image-2026-03-11-at-21-36-57-1.jpg",
+        "https://i.ibb.co/pBSJ4NV9/Whats-App-Image-2026-03-11-at-21-36-57.jpg"
       ]
     },
     {
