@@ -1,5 +1,60 @@
 import React from 'react';
-import { Users, ExternalLink, QrCode, Heart, FileText, CreditCard, Car, Droplets, HandHeart } from 'lucide-react';
+import { Users, ExternalLink, QrCode, Heart, FileText, CreditCard, Car, Droplets, HandHeart, Shield } from 'lucide-react';
+
+const colorStyles: Record<string, {
+  iconBg: string;
+  iconText: string;
+  cardBg: string;
+  cardBorder: string;
+  btnBg: string;
+  btnHover: string;
+}> = {
+  blue: {
+    iconBg: 'bg-blue-100', iconText: 'text-blue-600',
+    cardBg: 'bg-blue-50', cardBorder: 'border-blue-200',
+    btnBg: 'bg-blue-600', btnHover: 'hover:bg-blue-700',
+  },
+  green: {
+    iconBg: 'bg-green-100', iconText: 'text-green-600',
+    cardBg: 'bg-green-50', cardBorder: 'border-green-200',
+    btnBg: 'bg-green-600', btnHover: 'hover:bg-green-700',
+  },
+  purple: {
+    iconBg: 'bg-purple-100', iconText: 'text-purple-600',
+    cardBg: 'bg-purple-50', cardBorder: 'border-purple-200',
+    btnBg: 'bg-purple-600', btnHover: 'hover:bg-purple-700',
+  },
+  red: {
+    iconBg: 'bg-red-100', iconText: 'text-red-600',
+    cardBg: 'bg-red-50', cardBorder: 'border-red-200',
+    btnBg: 'bg-red-600', btnHover: 'hover:bg-red-700',
+  },
+  orange: {
+    iconBg: 'bg-orange-100', iconText: 'text-orange-600',
+    cardBg: 'bg-orange-50', cardBorder: 'border-orange-200',
+    btnBg: 'bg-orange-600', btnHover: 'hover:bg-orange-700',
+  },
+  slate: {
+    iconBg: 'bg-slate-100', iconText: 'text-slate-600',
+    cardBg: 'bg-slate-50', cardBorder: 'border-slate-200',
+    btnBg: 'bg-slate-600', btnHover: 'hover:bg-slate-700',
+  },
+  cyan: {
+    iconBg: 'bg-cyan-100', iconText: 'text-cyan-600',
+    cardBg: 'bg-cyan-50', cardBorder: 'border-cyan-200',
+    btnBg: 'bg-cyan-600', btnHover: 'hover:bg-cyan-700',
+  },
+  pink: {
+    iconBg: 'bg-pink-100', iconText: 'text-pink-600',
+    cardBg: 'bg-pink-50', cardBorder: 'border-pink-200',
+    btnBg: 'bg-pink-600', btnHover: 'hover:bg-pink-700',
+  },
+  emerald: {
+    iconBg: 'bg-emerald-100', iconText: 'text-emerald-700',
+    cardBg: 'bg-emerald-50', cardBorder: 'border-emerald-300',
+    btnBg: 'bg-emerald-700', btnHover: 'hover:bg-emerald-800',
+  },
+};
 
 const TrilhaCidadaniaPage: React.FC = () => {
   const servicos = [
@@ -98,6 +153,15 @@ const TrilhaCidadaniaPage: React.FC = () => {
       qrCode: "https://i.ibb.co/fzBSQkkt/QR-CODE-volutanrio.png",
       icon: HandHeart,
       color: "pink"
+    },
+    {
+      titulo: "Alistamento Militar",
+      descricao: "Serviço Militar Obrigatório: todo jovem brasileiro do sexo masculino que completa 18 anos tem o dever de se alistar. O processo inclui Alistamento, Seleção Geral, Seleção Complementar e Incorporação. Cumprir esse dever é um ato de cidadania e responsabilidade com o país!",
+      instrucoes: "Aponte a câmera do celular para o QR Code aqui do lado ou entre pelo link e seguir as instruções.",
+      link: "https://alistamento.eb.mil.br/",
+      qrCode: "https://i.ibb.co/W4KNLXrg/Alistamento-Militar.png",
+      icon: Shield,
+      color: "emerald"
     }
   ];
 
@@ -137,90 +201,93 @@ const TrilhaCidadaniaPage: React.FC = () => {
 
         {/* Serviços */}
         <div className="space-y-8">
-          {servicos.map((servico, index) => (
-            <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-lg">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
-                {/* Conteúdo Principal */}
-                <div className="lg:col-span-2 space-y-4">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className={`bg-${servico.color}-100 p-3 rounded-full`}>
-                      <servico.icon className={`w-6 h-6 text-${servico.color}-600`} />
+          {servicos.map((servico, index) => {
+            const styles = colorStyles[servico.color] || colorStyles.blue;
+            return (
+              <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-lg">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+                  {/* Conteúdo Principal */}
+                  <div className="lg:col-span-2 space-y-4">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className={`${styles.iconBg} p-3 rounded-full`}>
+                        <servico.icon className={`w-6 h-6 ${styles.iconText}`} />
+                      </div>
+                      <h2 className="text-lg sm:text-2xl font-bold text-gray-800">{servico.titulo}</h2>
                     </div>
-                    <h2 className="text-lg sm:text-2xl font-bold text-gray-800">{servico.titulo}</h2>
+                    
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+                      {servico.descricao}
+                    </p>
+                    
+                    <div className={`${styles.cardBg} border ${styles.cardBorder} rounded-lg p-4`}>
+                      <h3 className="text-sm sm:text-base font-semibold text-gray-800 mb-2">Como criar sua conta:</h3>
+                      <p className="text-xs sm:text-sm text-gray-700 mb-4">{servico.instrucoes}</p>
+                      
+                      {servico.titulo !== "Doação de Sangue" && (
+                        <a
+                          href={servico.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`inline-flex items-center gap-2 ${styles.btnBg} text-white px-4 py-2 rounded-lg font-semibold ${styles.btnHover} transition-colors duration-300 text-xs sm:text-sm`}
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                          Acessar Serviço
+                        </a>
+                      )}
+                    </div>
                   </div>
                   
-                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                    {servico.descricao}
-                  </p>
-                  
-                  <div className={`bg-${servico.color}-50 border border-${servico.color}-200 rounded-lg p-4`}>
-                    <h3 className="text-sm sm:text-base font-semibold text-gray-800 mb-2">Como criar sua conta:</h3>
-                    <p className="text-xs sm:text-sm text-gray-700 mb-4">{servico.instrucoes}</p>
-                    
-                    {servico.titulo !== "Doação de Sangue" && (
-                      <a
-                        href={servico.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`inline-flex items-center gap-2 bg-${servico.color}-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-${servico.color}-700 transition-colors duration-300 text-xs sm:text-sm`}
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        Acessar Serviço
-                      </a>
+                  {/* QR Code */}
+                  <div className="flex flex-col items-center justify-center bg-gray-50 rounded-lg p-6">
+                    {'qrCodes' in servico && servico.qrCodes ? (
+                      <div className="space-y-4">
+                        {servico.qrCodes.map((qrCode, qrIndex) => (
+                          <div key={qrIndex} className="flex flex-col items-center">
+                            <div className="bg-white p-4 rounded-lg shadow-md mb-3">
+                              <img
+                                src={qrCode}
+                                alt={`QR Code ${qrIndex + 1} para ${servico.titulo}`}
+                                className="w-32 h-32 sm:w-40 sm:h-40 object-contain"
+                              />
+                            </div>
+                            {'links' in servico && servico.links && servico.links[qrIndex] && (
+                              <a
+                                href={servico.links[qrIndex]}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`inline-flex items-center gap-2 ${styles.btnBg} text-white px-3 py-2 rounded-lg font-semibold ${styles.btnHover} transition-colors duration-300 text-xs mb-2`}
+                              >
+                                <ExternalLink className="w-3 h-3" />
+                                Acessar {qrIndex === 0 ? 'HECI' : 'Santa Casa'}
+                              </a>
+                            )}
+                          </div>
+                        ))}
+                        <div className="flex items-center gap-2 text-gray-600">
+                          <QrCode className="w-4 h-4" />
+                          <span className="text-xs sm:text-sm font-medium">Escaneie os QR Codes</span>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="flex flex-col items-center">
+                        <div className="bg-white p-4 rounded-lg shadow-md mb-3">
+                          <img
+                            src={servico.qrCode}
+                            alt={`QR Code para ${servico.titulo}`}
+                            className="w-32 h-32 sm:w-40 sm:h-40 object-contain"
+                          />
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-600">
+                          <QrCode className="w-4 h-4" />
+                          <span className="text-xs sm:text-sm font-medium">Escaneie o QR Code</span>
+                        </div>
+                      </div>
                     )}
                   </div>
                 </div>
-                
-                {/* QR Code */}
-                <div className="flex flex-col items-center justify-center bg-gray-50 rounded-lg p-6">
-                  {servico.qrCodes ? (
-                    <div className="space-y-4">
-                      {servico.qrCodes.map((qrCode, qrIndex) => (
-                        <div key={qrIndex} className="flex flex-col items-center">
-                          <div className="bg-white p-4 rounded-lg shadow-md mb-3">
-                            <img
-                              src={qrCode}
-                              alt={`QR Code ${qrIndex + 1} para ${servico.titulo}`}
-                              className="w-32 h-32 sm:w-40 sm:h-40 object-contain"
-                            />
-                          </div>
-                          {servico.links && servico.links[qrIndex] && (
-                            <a
-                              href={servico.links[qrIndex]}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className={`inline-flex items-center gap-2 bg-${servico.color}-600 text-white px-3 py-2 rounded-lg font-semibold hover:bg-${servico.color}-700 transition-colors duration-300 text-xs mb-2`}
-                            >
-                              <ExternalLink className="w-3 h-3" />
-                              Acessar {qrIndex === 0 ? 'HECI' : 'Santa Casa'}
-                            </a>
-                          )}
-                        </div>
-                      ))}
-                      <div className="flex items-center gap-2 text-gray-600">
-                        <QrCode className="w-4 h-4" />
-                        <span className="text-xs sm:text-sm font-medium">Escaneie os QR Codes</span>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="flex flex-col items-center">
-                      <div className="bg-white p-4 rounded-lg shadow-md mb-3">
-                        <img
-                          src={servico.qrCode}
-                          alt={`QR Code para ${servico.titulo}`}
-                          className="w-32 h-32 sm:w-40 sm:h-40 object-contain"
-                        />
-                      </div>
-                      <div className="flex items-center gap-2 text-gray-600">
-                        <QrCode className="w-4 h-4" />
-                        <span className="text-xs sm:text-sm font-medium">Escaneie o QR Code</span>
-                      </div>
-                    </div>
-                  )}
-                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Mensagem Final */}
