@@ -108,7 +108,7 @@ const TrilhaCurriculoPage: React.FC = () => {
                 color: "green"
               },
               {
-                title: "Formação Acadêmica",
+                title: "Formação",
                 description: "Cursos em andamento ou concluídos",
                 color: "purple"
               },
