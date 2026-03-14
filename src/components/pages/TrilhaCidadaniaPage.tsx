@@ -77,6 +77,15 @@ const TrilhaCidadaniaPage: React.FC = () => {
       color: "green"
     },
     {
+      titulo: "Pé-de-Meia",
+      descricao: "O Pé-de-Meia é um programa do governo que oferece incentivo financeiro para estudantes do ensino médio de escolas públicas, com o objetivo de evitar a evasão escolar e incentivar a conclusão dos estudos.",
+      instrucoes: "Aponte a câmera do seu celular para o QR Code aqui do lado ou acesse o link para mais informações.",
+      link: "https://www.gov.br/mec/pt-br/pe-de-meia",
+      qrCode: "https://i.ibb.co/PZV0KXw0/Pe-de-Meia.png",
+      icon: CreditCard,
+      color: "orange"
+    },
+    {
       titulo: "E-Título",
       descricao: "O E-Título é a versão digital do seu título de eleitor. Ele é super importante para você votar nas eleições e lembrar da importância de exercer seu direito democrático.",
       instrucoes: "Aponte a câmera do celular para o QR Code aqui do lado ou acesse o link e confira todas as informações.",
